@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+            <View
+                android:id="@+id/flag_other_unread"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_gravity="top|start"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_unread"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_toolbar"
+            android:background="@color/colorHome"
+            app:tabBackground="@android:color/transparent"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#4CFFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_layout"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/layout_network_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tab_layout"
+            android:background="@drawable/nav_bar_shadow" />
+
+        <View
+            android:id="@+id/view_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="#F5F5F5"
+            android:visibility="visible" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:saveEnabled="false"
+            fab:fab_addButtonColorNormal="?attr/talkColorPrimary"
+            fab:fab_addButtonColorPressed="?attr/talkColorDark"
+            fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_labelStyle="@style/FloatButtonLabel">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fab_type_group"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/color_pressed"
+                fab:fab_icon="@drawable/ic_type_group"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"
+                fab:fab_title="@string/fab_type_group" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_dms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fab_type_dms"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/color_pressed"
+                fab:fab_icon="@drawable/ic_type_dms"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"
+                fab:fab_title="@string/fab_type_dms" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fab_type_topic"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/color_pressed"
+                fab:fab_icon="@drawable/ic_story_topic"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"
+                fab:fab_title="@string/fab_type_topic" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fab_type_file"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/color_pressed"
+                fab:fab_icon="@drawable/ic_story_file"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"
+                fab:fab_title="@string/fab_type_file" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fab_type_link"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/color_pressed"
+                fab:fab_icon="@drawable/ic_story_link"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"
+                fab:fab_title="@string/fab_type_link" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            app:fab_icon="@drawable/ic_add_member"
+            fab:fab_colorNormal="?attr/talkColorPrimary"
+            fab:fab_colorPressed="?attr/talkColorDark" />
+
+        <View
+            android:id="@+id/show_case_anchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26dp"
+            android:layout_marginRight="26dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_team_key"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="240dp"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+
+        <include
+            layout="@layout/include_progress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="338dp" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+
+        <ListView
+            android:id="@+id/listView"
+            style="@style/BaseListView"
+            android:layout_marginTop="149dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="149dp"
+            android:background="@drawable/nav_bar_shadow" />
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

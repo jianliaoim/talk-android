@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center">
+
+            <com.teambition.talk.ui.widget.CodeInputView
+                xmlns:code="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/code_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:visibility="visible"
+                code:codeSize="4"
+                code:lineColor="@color/colorPrimary"
+                code:lineHeight="2dp"
+                code:lineInterval="8dp"
+                code:marginBottom="8dp"
+                code:textColor="@color/material_grey_900"
+                code:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_resend_vcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/material_grey_400"
+                android:layout_marginTop="36dp"
+                android:text="@string/resend"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/PositiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="32dp"
+                android:enabled="false"
+                android:text="@string/action_next" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/nav_bar_shadow" />
+
+</RelativeLayout>
+

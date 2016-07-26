@@ -1,0 +1,8 @@
+include ':app'
+include ':library:yuv'
+include ':library:chips'
+include ':library:emojicon'
+include ':library:TalkDialog'
+include ':library:engine.io-client'
+include ':library:JniBitmapOperationsLibrary'
+include ':library:ijkplayer-java'

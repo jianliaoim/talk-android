@@ -1,0 +1,269 @@
+* {
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, freesans,clean,sans-serif;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,code,em,img,small,strong,sub,sup,b,i,dl,dt,dd,ol,ul,li,table,tbody,tfoot,thead,tr,th,td {
+    border: 0;
+    /* font-size: <fontsize>px; dynamic variable set in application preferences*/
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    /*-webkit-font-smoothing: antialiased;*/
+    background-color: rgba(255,255,255,0.0);
+    padding-top: 12px;
+    padding-right: 30px; /* padding-right: 0; (set to 30 for example render) */
+    padding-bottom: 9px;
+    padding-left: 30px; /* padding-left: 0; (set to 30 for example render) */
+    color: #333;
+}
+
+/* Highlighed Text Color */
+
+::selection {background: #68C6DF; color:#FFFFFF;}
+
+/* EMBEDS */
+img {
+    display: block;
+    padding: 10px 0;
+    max-width: 100%;
+}
+
+.video_embed {
+    display: block;
+    padding: 10px 0;
+    height: <videoheight>px; /* dynamic variable set by application */
+    width: <screenwidth>px; /* dynamic variable set by application */
+}
+
+/* STYLES */
+em {
+    color: #373737;
+}
+
+strong {
+    color: #252525;
+}
+
+a {
+    color: #47B1C7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EA4C89;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* HEADERS */
+
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 10px 0 7px;
+}
+
+h1.title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #26748F;
+    line-height: 1.3;
+    margin: 11px 0 16px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 22px 0 7px;
+}
+
+h3,h4,h5,h6 {
+    line-height: 1.1;
+    margin: 24px 0 5px;
+}
+
+h3 {
+    color: #EA4C89;
+    font-size: .85em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #26748F;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: 700;
+    color: #26748F;
+}
+
+h6 {
+    color: #415F6C;
+    font-size: .85em;
+    font-weight: 700;
+    font-variant: italic;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+
+dl,ol,ul,p,blockquote,pre {
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+
+
+/* LISTS */
+
+ol,ul {
+    margin: .8em 1em;
+    padding-left: .8em;
+}
+
+ol li {
+    margin-left: 1em;
+    margin-bottom: .3em;
+}
+
+ul li {
+    margin-left: 1em;
+    margin-bottom: .3em;
+}
+
+ol ol,ol ul,ul ol,ul ul {
+    margin: .3em 0;
+}
+
+.footnotes ol li {
+    margin-bottom: 10px;
+    margin-left: 16px;
+    font-weight: 800;
+    font-size: .9em;
+}
+
+.footnotes ol li p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* code */
+/* preformatted */
+blockquote {
+    border-left: solid .4em #ddd;
+    padding-left: 10px;
+    quotes: none;
+}
+
+pre,code,tt {
+    font: 1em 'Bitstream Vera Sans Mono', Courier New, monospace;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: #E8E8E8 1px solid;
+    color: #444;
+    display: block;
+    margin: 12px 0;
+    overflow: auto;
+    padding: 6px 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    cursor: text;
+    max-width: 100%;
+    overflow: auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+code {
+    color: #2c92b0;
+    border: 1px solid #E8E8E8;
+    font-size: .95em;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+pre code {
+    font-size: .95em;
+    padding: 0 !important;
+    background-color: #F6F6F6;
+    border: none !important;
+    overflow: visible;
+}
+
+/* tables */
+table {
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-spacing: 0;
+}
+
+table th {
+    padding: 3px 10px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table tr {
+}
+
+table td {
+    padding: 3px 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+/* sub */
+sup,sub,a.footnote {
+    font-size: 1.4ex;
+    height: 0;
+    line-height: 1;
+    vertical-align: super;
+    position: relative;
+    font-weight: 800;
+}
+
+sub {
+    vertical-align: sub;
+    top: -1px;
+}
+
+small {
+    font-size: 85%;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+}

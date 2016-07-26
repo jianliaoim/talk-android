@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contacts_text_left_margin">72dp</dimen>
+    <dimen name="contacts_avatar_right_margin">16dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="search_icon_padding">12dp</dimen>
+    <dimen name="search_view_text_padding">65dp</dimen>
+    <dimen name="image_story_divider">4dp</dimen>
+    <dimen name="file_format_radius">10dp</dimen>
+    <dimen name="story_chat_file_radius">4dp</dimen>
+</resources>

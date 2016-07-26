@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Talk</string>
+
+    <!-- base -->
+    <eat-comment />
+    <string name="confirm">CONFIRM</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="discard">DISCARD</string>
+    <string name="change">CHANGE</string>
+    <string name="reset">REST</string>
+    <string name="none">none</string>
+    <string name="wait">Please wait&#8230;</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="me">Me</string>
+    <string name="name">Name</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save_to_local">Save to SDCard</string>
+    <string name="favorite">Favorite</string>
+    <string name="copy">Copy</string>
+    <string name="tag">Tag</string>
+    <string name="general">General</string>
+    <string name="talk_ai">Talk AI</string>
+    <string name="talk_ai_py">talk ai</string>
+    <string name="i_know">DONE</string>
+    <string name="invite">INVITE</string>
+    <string name="not_mention">REMEMBER</string>
+    <string name="email">E-Mail</string>
+
+    <!-- notification -->
+    <eat-comment />
+    <string name="auth_failed">Authentication expired. Please sign in again.</string>
+    <string name="network_failed">Network failed!</string>
+    <string name="update_success">Update Success</string>
+    <string name="title_quit_topic">Quit Topic</string>
+    <string name="title_delete_topic">Delete Topic</string>
+    <string name="title_archive_topic">Archive Topic</string>
+    <string name="title_remove_member">Remove Member</string>
+    <string name="title_delete_message">Delete message</string>
+    <string name="message_delete_message">Are you sure you want to delete this message?</string>
+    <string name="title_delete_favorite">Delete favorite</string>
+    <string name="message_delete_favorite">Are you sure you want to delete these items?</string>
+    <string name="confirm_quit_topic">Are you sure you want to quit this topic?</string>
+    <string name="confirm_quit_topic_private">Are you sure you want to quit this topic?</string>
+    <string name="confirm_delete_topic">All the chatting history of this conversation will be deleted permanently.</string>
+    <string name="confirm_archive_topic">You can restore an archived topic from the bottom section of topic list.</string>
+    <string name="confirm_remove_member_from_room">Are you sure to remove this member from this topic?</string>
+    <string name="confirm_remove_member_from_team">Are you sure to remove this member from this team?</string>
+    <string name="title_quit_team">Quit Current Team</string>
+    <string name="confirm_quit_team">Are you sure to quit the current team?</string>
+    <string name="new_message">You have new messages</string>
+    <string name="input_email">Email address</string>
+    <string name="email_has_not_register">This email hasn\'t been registered or already joined</string>
+    <string name="name_empty">Name cannot be empty</string>
+    <string name="confirm_download">Confirm to download this file</string>
+    <string name="file_too_large">This file is larger than 500KB. Are you sure to download with cellular network?</string>
+    <string name="download_finish">Download Finish</string>
+    <string name="download_finish_message" formatted="false">File has been saved to %s, press confirm to open with a proper app</string>
+    <string name="save_finish_message" formatted="false">File has been saved to %s </string>
+    <string name="not_support_file_type">File type is not supported currently</string>
+    <string name="anonymous_user">Anonymous User</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="audio_too_short">Audio too short</string>
+    <string name="download_file_title">Download &amp; Open</string>
+    <string name="download_file_message" formatted="false">Click confirm to download file(%s).</string>
+    <string name="favorite_success">Added to Favorites</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <!-- tab title -->
+    <eat-comment />
+    <string name="tab_recent">RECENT</string>
+    <string name="tab_contact">CONTACTS</string>
+    <string name="tab_more">MORE</string>
+
+    <!-- title -->
+    <string name="title_select_image">Select Images</string>
+
+    <!-- fab -->
+    <string name="fab_type_group">Topic</string>
+    <string name="fab_type_dms">DMS</string>
+    <string name="fab_type_topic">Idea</string>
+    <string name="fab_type_file">Picture</string>
+    <string name="fab_type_link">Link</string>
+
+    <!-- menu -->
+    <eat-comment />
+    <string name="action_next">Next</string>
+    <string name="action_send">Send</string>
+    <string name="action_done">Done</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_search">Search</string>
+    <string name="action_call">Add members</string>
+    <string name="action_add_member">Archive</string>
+    <string name="action_add_topic">Delete</string>
+    <string name="action_add_group">Topic settings</string>
+    <string name="action_archive_topic">Quit</string>
+    <string name="action_delete_topic">Delete</string>
+    <string name="action_topic_setting">Topic settings</string>
+    <string name="action_story_setting">Settings</string>
+    <string name="action_story_edit">Edit</string>
+    <string name="action_quit_topic">Quit</string>
+    <string name="action_edit_profile">Edit profile</string>
+    <string name="action_team_setting">Team settings</string>
+    <string name="action_quit_team">Quit this team</string>
+    <string name="action_set_admin">Set as admin</string>
+    <string name="action_set_normal">Cancel admin</string>
+    <string name="action_kick_out">Remove from team</string>
+    <string name="action_message">Send message</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_select_img">Select Image</string>
+    <string name="action_delete_story">Delete</string>
+    <string name="action_quit_story">Quit</string>
+    <string name="action_context">Look at the context</string>
+
+    <!-- recent -->
+    <eat-comment />
+    <string name="recent_welcome_to_talk">Welcome to Talk !</string>
+    <string name="recent_welcome_message">Tap the + button on the top right corner\n to invite others or create new topics.</string>
+    <string name="recent_general"># General</string>
+    <string name="pin_recent">Pin this notification</string>
+    <string name="unpin_recent">Unpin this notification</string>
+    <string name="hide_recent">Hide this notification</string>
+    <string name="mute_recent">Disable notification</string>
+    <string name="un_mute_recent">Enable notification</string>
+
+    <!-- setting -->
+    <eat-comment />
+    <string name="title_notification_setting">Notification settings</string>
+    <string name="push_on_work_time">Notification duration 8:00 to 22:00</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="only_at_notifications">Only mentions</string>
+    <string name="disable_notifications">Disable notifications</string>
+
+    <!-- personal preference -->
+    <eat-comment />
+    <string name="mobile">Mobile</string>
+    <string name="alias_in_team">Alias in the team</string>
+    <string name="hide_phone_in_team">Hide phone number in team</string>
+    <string name="confirm_discard">Do you want to quit this page without saving changes?</string>
+    <string name="title_discard">Discard changes</string>
+    <string name="preference_linked_accounts">Linked accounts</string>
+    <string name="preference_notify">Notification preferences</string>
+    <string name="preference_sign_out">Sign out</string>
+    <string name="account_phone">Phone</string>
+    <string name="account_teambition">Teambition</string>
+    <string name="account_empty">Not bound</string>
+    <string name="account_bind">Bind</string>
+    <string name="account_unbind">Unbind</string>
+    <string name="account_change">Change</string>
+
+    <!-- team -->
+    <eat-comment />
+    <string name="team">team</string>
+    <string name="hint_create_team">Team Name</string>
+    <string name="create_team">Create a team</string>
+    <string name="create_team_description">Scan QR Code</string>
+    <string name="scan_qr_code">Scan to join team</string>
+    <string name="scan_qr_code_description">Scan to join team</string>
+    <string name="sync_teambition">Sync team from Teambition</string>
+    <string name="sync_teambition_description">sync all enterprise member to a new team</string>
+    <string name="scan_qr_code_to_join_team">Scan QR Code to join team</string>
+    <string name="no_team_error">No team information was found</string>
+    <string name="file_type_error">Wrong file type </string>
+    <string name="qr_code_refresh_error">Refresh QR Code failed</string>
+    <string name="add_member_success">Add member success</string>
+    <string name="copied_to_clipboard_and_gowx">Copied to clipboard. Please paste in Wehat</string>
+    <string name="wechat_not_installed" >WeChat is not installed</string>
+    <string name="wechat">WeChat</string>
+    <string name="moment">Moment</string>
+    <string name="system_share">Share dialog</string>
+
+    <!-- topic -->
+    <eat-comment />
+    <string name="topic_join">JOIN</string>
+    <string name="group_already_joined">Topics Already Joined</string>
+    <string name="group_to_join">More Topics to Join</string>
+    <string name="group_pinned">Pinned Topics</string>
+    <string name="pin_topic">Pin this topic</string>
+    <string name="unpin_topic">Unpin this topic</string>
+    <string name="create_group">Add a new group</string>
+    <string name="create_topic">Create a new topic</string>
+    <string name="topic_setting">Topic Setting</string>
+    <string name="topic_name">Name</string>
+    <string name="topic_goal">Goal</string>
+    <string name="topic_visibility">Visibility</string>
+    <string name="topic_is_private">Private topic</string>
+    <string name="topic_is_mute">Mute</string>
+    <string name="topic_is_pin">Pin to top</string>
+    <string name="topic_color">Color</string>
+    <string name="add_new_members">Invite Members</string>
+    <string name="add_from_team">Add Members from this Team</string>
+    <string name="title_choose_member">Choose Members</string>
+    <string name="topic_private">Only Topic Members</string>
+    <string name="topic_public">All Team Members</string>
+    <string name="archived_room">View All Archived Topics</string>
+    <string name="no_archived_room">No archived topics currently</string>
+    <string name="restore_room">Restore Topic</string>
+    <string name="restore_room_confirm" formatted="false">Are you sure to restore topic %s ?</string>
+    <string name="topic_setting_info">Info</string>
+    <string name="topic_setting_setting">Settings</string>
+    <string name="topic_setting_member">Members</string>
+    <string name="topic_setting_discard">Discard</string>
+    <string name="create_topic_name">Topic Name</string>
+
+    <!-- chat -->
+    <eat-comment />
+    <string name="welcome_to_general_talk">Welcome to Talk !</string>
+    <string name="message_of_general_talk">This is a general topic\n you can broadcast notices from here</string>
+    <string name="welcome_to_public_talk">Hi</string>
+    <string name="welcome_to_story_talk">Hi</string>
+    <string name="message_of_public_talk" formatted="false">This topic is created by %s on %s\n Tap Setting button on the top right corner\n to configure this topic</string>
+    <string name="message_of_story_talk" formatted="false">This idea is shared by %s on %s\n Tap \'Setting\' button on the right of top\n to invite others join this conversation.</string>
+    <string name="welcome_to_private_talk">Hi</string>
+    <string name="message_of_private_talk">This conversation is private\n and only visible between you two.</string>
+    <string name="welcome_to_xiaoai">Hi! It\'s Talk AI!</string>
+    <string name="message_of_xiaoai">I\'m the assistant of Talk.\n I\'ll bring you the latest feature as soon as possible.</string>
+    <string name="sending">Sending&#8230;</string>
+    <string name="uploading">Uploading&#8230;</string>
+    <string name="send_failed">Failed, tap to resend</string>
+    <string name="upload_failed">Failed, tap to upload</string>
+    <string name="picture">[Picture]</string>
+    <string name="audio">[Audio]</string>
+    <string name="attachment">[File]</string>
+    <string name="rich_content">[Rich Text]</string>
+    <string name="snippet">[Snippet]</string>
+    <string name="preview">You\'re previewing</string>
+    <string name="unread_tip" formatted="false">%d new messages</string>
+    <string name="hold_to_speak">Hold to speak</string>
+    <string name="release_to_stop">Release to cancel</string>
+    <string name="voice_cancel_tip">Finger sliding upward,\n cancel sending</string>
+    <string name="voice_delete_tip">Release your finger,\n cancel sending</string>
+    <string name="audio_download_fail">Audio download failed</string>
+    <string name="app_not_installed">This app is not installed yet.</string>
+    <string name="tb_not_support">Your teambition application does not support. Please update it.</string>
+    <string name="send_msg_hint">Say something&#8230;</string>
+    <string name="title_receiptor_activity" formatted="false">%d/%d received</string>
+
+    <!-- remote info -->
+    <eat-comment />
+    <string name="info_comment" formatted="false">%s comment</string>
+    <string name="info_commit_comment" formatted="false">Comment on commit</string>
+    <string name="info_create" formatted="false">Create branch or tag</string>
+    <string name="info_create_integration" formatted="false">%s created integration</string>
+    <string name="info_created_file" formatted="false">uploaded file</string>
+    <string name="info_created_task" formatted="false">%s created task</string>
+    <string name="info_delete" formatted="false">Delete branch or tag</string>
+    <string name="info_firim_message" formatted="false">Message from FIR.im</string>
+    <string name="info_fork" formatted="false">Fork</string>
+    <string name="info_github_new_event" formatted="false">Event from GitHub</string>
+    <string name="info_gitlab_new_event" formatted="false">Event from GitLab</string>
+    <string name="info_issue_comment" formatted="false">Comment on issue</string>
+    <string name="info_issue" formatted="false">Issues</string>
+    <string name="info_join_room" formatted="false">%s joined topic</string>
+    <string name="info_join_team" formatted="false">%s joined team</string>
+    <string name="info_leave_room" formatted="false">%s left topic</string>
+    <string name="info_leave_team" formatted="false">%s left team</string>
+    <string name="info_mention" formatted="false">%s mention</string>
+    <string name="info_merge_request" formatted="false">Merge</string>
+    <string name="info_message" formatted="false">Messages</string>
+    <string name="info_new_mail_message" formatted="false">Share from email: </string>
+    <string name="info_pull_request" formatted="false">Pull Request</string>
+    <string name="info_pull_request_review_comment" formatted="false">Commit in PR</string>
+    <string name="info_push" formatted="false">Push</string>
+    <string name="info_remove_integration" formatted="false">%s removed integration</string>
+    <string name="info_repost" formatted="false">%s repost</string>
+    <string name="info_rss_new_item" formatted="false">New RSS item: </string>
+    <string name="info_update_integration" formatted="false">%s updated integration</string>
+    <string name="info_update_purpose" formatted="false">%s updated purpose: </string>
+    <string name="info_update_topic" formatted="false">%s updated topic: </string>
+    <string name="info_weibo_new_comment" formatted="false">Comment from Weibo: </string>
+    <string name="info_weibo_new_mention" formatted="false">Mention from Weibo: </string>
+    <string name="info_weibo_new_repost" formatted="false">Repost from Weibo: </string>
+    <string name="info_enable_guest" formatted="false">%s enable Guest Mode</string>
+    <string name="info_disable_guest" formatted="false">%s disable Guest Mode</string>
+    <string name="info_pin_notification" formatted="false">%s pin this notification</string>
+    <string name="info_unpin_notification" formatted="false">%s unpin this notification</string>
+    <string name="info_create_story" formatted="false">%s share an idea</string>
+    <string name="info_invite_story_member" formatted="false">%s add member to discuss</string>
+    <string name="info_remove_story_member" formatted="false">%s remove member from discuss</string>
+    <string name="info_invite_members" formatted="false">%s add member</string>
+    <string name="info_remove_members" formatted="false">%s remove member</string>
+    <string name="info_remove_story_confirm" formatted="false">%s Are you sure to remove this member from this discuss?</string>
+    <string name="info_update_story" formatted="false">%s updated discuss</string>
+    <string name="info_leave_story" formatted="false">%s left discuss</string>
+    <string name="info_remove_message" formatted="false">%s deleted message</string>
+    <string name="info_upload_files" formatted="false">%s uploaded file</string>
+    <string name="info_new_speech" formatted="false">%s sent an audio message</string>
+    <string name="info_new_video" formatted="false">%s sent an video message</string>
+    <string name="info_invite_you" formatted="false">%s invited you to discuss</string>
+    <string name="info_invite_team_member" formatted="false">%s invited team member</string>
+    <string name="info_create_room" formatted="false">%s created room</string>
+    <string name="info_create_file_story" formatted="false">%s share a file</string>
+    <string name="info_create_topic_story" formatted="false">%s share an idea</string>
+    <string name="info_create_link_story" formatted="false">%s share a link</string>
+    <string name="carw_error">crawl failed</string>
+
+    <!-- formatter -->
+    <eat-comment />
+    <string name="date_format">HH:mm</string>
+    <string name="date_format_with_date">MM/dd HH:mm</string>
+    <string name="date_format_with_year">yyyy/MM/dd HH:mm</string>
+    <string name="date_format_only_date">yyyy/MM/dd</string>
+    <string name="date_format_full">MM dd,yyyy</string>
+
+    <!-- date & time -->
+    <eat-comment />
+    <string name="just_now">just now</string>
+
+    <!-- float action button label -->
+    <eat-comment />
+    <string name="label_new_file">File</string>
+    <string name="label_new_image">Picture</string>
+    <string name="label_new_topic">Topic</string>
+    <string name="label_new_link">Link</string>
+
+    <!-- share handler -->
+    <eat-comment />
+    <string name="group_name_topic">TOPICS</string>
+    <string name="group_name_member">MEMBERS</string>
+    <string name="share_send">SEND</string>
+    <string name="share_cancel">CANCEL</string>
+    <string name="notification_network">Please check your network connection</string>
+    <string name="notification_login">Please login</string>
+    <string name="notification_choose_team">Please choose a team</string>
+
+    <!-- search -->
+    <eat-comment />
+    <string name="search_result_tag_member">MEMBERS</string>
+    <string name="search_result_tag_room">TOPICS</string>
+    <string name="search_result_tag_message">MESSAGES</string>
+    <string name="search_result_more_member" formatted="false">More members with keyword \'%s\'</string>
+    <string name="search_result_more_room" formatted="false">More topics with keyword \'%s\'</string>
+    <string name="search_result_more_message" formatted="false">More messages with keyword \'%s\'</string>
+    <string name="search_result_search_message" formatted="false">Search messages with keyword \'%s\'</string>
+    <string name="search_result_empty" formatted="false">no messages with keyword \'%s\' was found</string>
+
+    <!-- add team member -->
+    <eat-comment />
+    <string name="input_phone_or_email">Mobile or Email</string>
+    <string name="email_and_other_contacts">Email</string>
+    <string name="local_contacts">Mobile contacts</string>
+    <string name="qr_code">QR Code</string>
+    <string name="sms_title">Invite to Talk</string>
+    <string name="sms_message">You friend hasn\'t sign up yet. Send an invitation to your team through SMS.</string>
+    <string name="email_message">You friend hasn\'t sign up yet. Send an invitation to your team through email.</string>
+    <string name="invitation_sent">Invitation sent.</string>
+    <string name="sms_content" formatted="false">Invitation to %s team. Visit %s to sign up , and download Talk app to join the team.</string>
+    <string name="not_visit">not visited</string>
+    <string name="not_visit_title">Member hasn\'t visited Talk</string>
+    <string name="not_visit_content">You can\'t chat with he (or she). Please notify your teammate of binding account.</string>
+    <string name="share_team_invite">Share team invitation</string>
+    <string name="share_invite_content" formatted="false">Copy this message and open Talk app. Then you can join team %s %s %s</string>
+
+    <!-- more -->
+    <eat-comment />
+    <string name="more_items">Message Shelf</string>
+    <string name="favorites_items">Favorites</string>
+    <string name="addons_items">Extended Apps</string>
+    <string name="team_activities">Team Activities</string>
+    <string name="team_setting_items">Team Settings</string>
+    <string name="at_me">\@Me</string>
+
+    <!-- file making up -->
+    <eat-comment />
+    <string name="all">All</string>
+    <string name="menu_filter_file">Files</string>
+    <string name="menu_filter_link">Links</string>
+    <string name="menu_filter_rtf">Posts</string>
+    <string name="menu_snippet">Snippet</string>
+    <string name="hint_search">Search topic, conversation</string>
+    <string name="no_result_title">No result</string>
+    <string name="no_result_message">File, rich text and links of the conversation will be automatically saved here.</string>
+    <string name="make_up_new_tip_title">Message Shelf</string>
+    <string name="make_up_new_tip_message">Files, rich text and links of this conversation will be automatically saved here.</string>
+    <string name="make_up_chat_tip_title">Message Shelf</string>
+    <string name="make_up_chat_tip_message">Rich content will be saved here automatically.</string>
+
+    <!--favorite-->
+    <eat-comment />
+    <string name="search_result_no_favorite" formatted="false">\"%s\" is not in favorites.</string>
+    <string name="audio_message_name">Audio</string>
+    <string name="details">Details</string>
+    <string name="favorites_selected" formatted="false">Selected %d favorites</string>
+    <string name="favorites_selected_one" formatted="false">Selected 1 favorite</string>
+    <string name="no_favorite">No favorite</string>
+    <string name="no_favorite_message">Tap and hold on a message to favorite.</string>
+
+    <!--mentioned me-->
+    <string name="no_mentioned_me">No one mentioned you</string>
+
+    <!-- new oauth -->
+    <eat-comment />
+    <string name="oauth_begin">Auth by mobile</string>
+    <string name="oauth_begin_with_teambition">Have a Teambition account? Log in</string>
+    <string name="oauth_login_phone">Login via mobile</string>
+    <string name="oauth_policy">Terms of Service and Privacy Policy</string>
+    <string name="oauth_name_empty">Name cannot be empty</string>
+    <string name="login_tip">Please verify your phone number. We will send you a short message with verification code.</string>
+    <string name="change_binding_tip">Please verify your new phone number. We will send you a short message with verification code.</string>
+    <string name="change_email_binding_tip">Please verify your new email address. We will send you a email with verification code.</string>
+    <string name="email_login_tip">Please verify your email address. We will send you a email with verification code.</string>
+    <string name="country_code">+ 86</string>
+    <string name="input_phone">Mobile</string>
+    <string name="input_phone_error">Error phone number</string>
+    <string name="input_email_error">Error email address</string>
+    <string name="input_phone_error_content">Please check your phone number.</string>
+    <string name="input_email_error_content">Please check your email address.</string>
+    <string name="resend">Resend</string>
+    <string name="resend_countdown">Resend(%s)</string>
+    <string name="send_code_to_phone">Verification code has benn send to \n%s</string>
+    <string name="input_v_code_title">Verification code</string>
+    <string name="input_sms_code_error_title">Error verification code</string>
+    <string name="input_sms_code_error_content">Please check your verification code</string>
+    <string name="delete_origin_account">This account has been existed or bind.</string>
+    <string name="delete_origin_account_content" formatted="false">Account %s has been existed or bind. The existing one will be removed if you go on.</string>
+    <string name="bind_success">Bind success</string>
+    <string name="bind_mobile_success">Now you can login Talk via phone number!</string>
+    <string name="bind_email_success">Now you can login Talk via email address!</string>
+    <string name="bind_teambition_success">Now you can login Talk via Teambition account!</string>
+    <string name="bind_mobile">Bind phone number</string>
+    <string name="bind_email">Bind email address</string>
+    <string name="change_mobile">Change phone number</string>
+    <string name="change_email">Change email address</string>
+    <string name="complete_user_info">Complete user info</string>
+    <string name="unbind">Unbind</string>
+    <string name="unbind_teambition_account">Unbind Teambition account</string>
+    <string name="unbind_teambition_account_content">Teambition account can\'t been used for auth if you unbind it. But it will make no difference to your team.</string>
+    <string name="talk_email">support@jianliao.com</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="login">Sign in</string>
+    <string name="register">Sign up</string>
+    <string name="password_less_than_6">Password should be longer than 6</string>
+    <string name="login_error">Error email or phone format.</string>
+    <string name="account_exist_error">Existed account</string>
+    <string name="password_required">Password</string>
+    <string name="password_again">Password again</string>
+    <string name="password_not_equal">password not equal</string>
+    <string name="check_password_reset_email">A email with reset link has been send to your inbox.</string>
+    <string name="mobile_login">Phone number</string>
+    <string name="email_login">Email address</string>
+    <string name="reset_password">Reset password</string>
+    <string name="find_password">Find password</string>
+    <string name="email_auth">Auth via email</string>
+    <string name="mobile_register">Sign up via phone number</string>
+    <string name="email_register">Sign up via email</string>
+    <string name="mobile_find_pwd">Find password via phone</string>
+    <string name="email_find_pwd">Find password via email</string>
+
+    <!-- addons -->
+    <eat-comment />
+    <string name="addons_picture">Picture</string>
+    <string name="addons_file">File</string>
+    <string name="addons_absence">Absence</string>
+    <string name="action_open_browser">Open in browser</string>
+    <string name="action_copy_link">Copy link</string>
+
+    <!-- tag -->
+    <string name="add_tag">Add Tags</string>
+    <string name="input_tag_name_hint">Enter a tag</string>
+    <string name="create_tag_failed">You have already created this tag</string>
+    <string name="team_tag_empty">No tag</string>
+    <string name="tag_message_empty">Tap and hold on a message to add tags</string>
+    <string name="team_tag_empty_tip">Tap and hold on a message to add tags</string>
+    <string name="tag_message_empty_tip">在聊天中长按消息可添加标签</string>
+    <string name="edit_tag">Edit Tag</string>
+    <string name="delete_tag">Delete Tag</string>
+    <string name="delete_tag_title">Delete Tag</string>
+    <string name="delete_tag_message">This tag will be removed from all your messages</string>
+
+    <string name="transmit">Forward</string>
+    <string name="send_to">Forward to</string>
+    <string name="send">Send</string>
+    <string name="confirm_send_to">Confirm to forward to %s</string>
+    <string name="code">Code</string>
+    <string name="sent">Successfully sent</string>
+    <string name="send_favorite_content">Favorites</string>
+    <string name="leave_member">Quit member</string>
+    <string name="chat_leave_member">This member has been quit</string>
+    <string name="already_leave_team">Quit from team</string>
+
+    <string name="hide_chat">Hide chat</string>
+
+    <string name="network_state_connected">Connected</string>
+    <string name="network_state_connecting">Connecting</string>
+    <string name="network_state_disconnected">No internet connection</string>
+
+    <string name="major_country">Pop country</string>
+
+    <!-- sync teambition -->
+    <eat-comment/>
+    <string name="sync_teambition_title">Sync team from Teambition</string>
+    <string name="sync_teambition_content">Team admin can sync member from Teambition in real time via binding Teambition account.</string>
+    <string name="sync_team">Sync team</string>
+    <string name="syncing">Syncing…</string>
+    <string name="sync_success">Sync successfully</string>
+    <string name="sync_fail">Sync failed</string>
+    <string name="no_team_found">No team found</string>
+    <string name="bind_teambition">Bind Teambition account</string>
+    <string name="talk_free_call">Talk free call</string>
+    <string name="free_call_tip">You can make phone call for free after binding phone number.</string>
+    <string name="a_later_date">Later</string>
+    <string name="immediately_using">Use immediately</string>
+    <string name="input_name">Name</string>
+    <string name="multi_call">Multi-people phone call</string>
+    <string name="multi_call_number">Multi-people phone call(%s)</string>
+    <string name="wait_dial_back">Wait for calling</string>
+    <string name="meet_listen_call">Please pick up %s\'s calling.</string>
+    <string name="hide_window">Hide window</string>
+    <string name="show_ta">Remind he/she</string>
+    <string name="not_bind_phone">No phone number bind</string>
+    <string name="not_bind_phone_tip">No phone number bind with this member. You can\'t make free phone call.</string>
+    <string name="conference_call_number">%s people conference call</string>
+    <string name="verification_success">Verify success</string>
+    <string name="verification_success_content">Make a free phone call with team members for free.</string>
+    <string name="admin">%s (Administrator)</string>
+    <string name="owner">%s (Owner)</string>
+    <string name="topic_name_exist">Existing topic name</string>
+    <string name="group_name_exist">Existing group name</string>
+    <string name="my_group">Member group</string>
+
+    <string name="search_hint">Search</string>
+    <string name="title_create_story">Share idea</string>
+    <string name="title_file_story">Share file</string>
+    <string name="title_link_story">Share link</string>
+    <string name="title">I have an ieda to share</string>
+    <string name="description">Detailed description</string>
+    <string name="link">Link</string>
+    <string name="input_a_link">Enter or paste a link</string>
+    <string name="link_content">Content</string>
+    <string name="clear">Clear</string>
+    <string name="crawl">Crawl</string>
+    <string name="no_description">No description</string>
+    <string name="create_at" formatted="false">create at %s</string>
+
+    <string name="source_image">original</string>
+    <string name="file_not_exist">file not exist</string>
+
+    <string name="content_quit_story">Are you sure to quit this discuss?</string>
+    <string name="content_delete_story">Are you sure to delete this discuss?</string>
+    <string name="group_manager">Manage group</string>
+    <string name="edit_name">Edit name</string>
+    <string name="title_remove_group">Remove group</string>
+    <string name="info_remove_group_confirm">Are you sure to delete this group?</string>
+    <string name="story_already_delete_title">Discuss deleted already.</string>
+    <string name="story_delete_content">This discuss has been deleted already.</string>
+    <string name="create_story">Create story</string>
+    <string name="outline">[Draft]</string>
+    <string name="preference_feedback">Feedback</string>
+    <string name="preference_language">Language</string>
+    <string name="feedback_content_hint">Content</string>
+    <string name="title_captcha_dialog">Captcha</string>
+    <string name="refresh">Refresh</string>
+    <string name="content_captcha">Find %s from the following pictures.</string>
+    <string name="valid_fail">(Valid fail)</string>
+    <string name="record_audio_permission_denied">Please give talk the permission to access microphone.</string>
+    <string name="record_contacts_permission_denied">Please give talk the permission to access contacts.</string>
+    <string name="camera_permission_denied">Please give talk the permission to access camera.</string>
+    <string name="sdcard_permission_denied">Please give talk the permission to access local storage.</string>
+    <string name="read_phone_state_permission_denied">Please give talk the permission to access phone state.</string>
+    <string name="survey_title">Survey for 3.0</string>
+    <string name="survey_content">Hi! You have been using our new version for some time. Tell us your feeling.</string>
+    <string name="no_need">No thanks</string>
+    <string name="talk_about_feelings">Tell your feeling</string>
+
+    <!--user guide-->
+    <string name="guide_text1">Awesome design</string>
+    <string name="guide_text2">Share everything on Talk</string>
+    <string name="begin_to_experience">Being Talk</string>
+    <string name="tips_start_chat">Start here,search direct message and topic,or share Idea/File/Link with your partners.</string>
+    <string name="tips_expand_story">Click here to read detail.</string>
+    <string name="tips_manage_story_member">Admin can edit groups and you can invite group members to your chat.</string>
+    <string name="tips_add_contacts">We need to collect your contacts. We won\'t leak your contacts without your permission.</string>
+    <string name="add">Add</string>
+    <string name="talk_web_online">You\'ve been signed in on Talk Web</string>
+    <string name="tips">Note</string>
+    <string name="stop_notification_on_device">MUTE PHONE NOTIFICATION</string>
+    <string name="resume_notification_on_device">UNMUTE PHONE NOTIFICATION</string>
+    <string name="already_mute">Mute phone notification</string>
+    <string name="already_unmute">Unmute phone notification</string>
+    <string name="modify">Modify</string>
+    <string name="recommend_not_qqmail">We recommend not using QQ E-Mail to prevent from delaying</string>
+    <string name="all_members">All members</string>
+    <string name="all_position">All positions</string>
+    <string name="not_filter_tag">Not filter tag</string>
+    <string name="all_type">All types</string>
+    <string name="one_day_within">Within one day</string>
+    <string name="one_week_within">Within one week</string>
+    <string name="january_within">Within one month</string>
+    <string name="march_within">Within three months</string>
+    <string name="all_tag">All tags</string>
+    <string name="at_all">All</string>
+    <string name="calendar_error">日程时间无效</string>
+    <string name="send_calendar_items">Send Calendar</string>
+    <string name="calendar_remind_row">日程将于%s提醒</string>
+
+    <!--team activity-->
+    <string name="no_team_activity">No team activity</string>
+    <string name="is_compressed">Is compressed</string>
+</resources>

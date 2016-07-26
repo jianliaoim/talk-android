@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_team_grey" />
+
+        <EditText
+            android:id="@+id/team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:background="@null"
+            android:hint="@string/hint_create_team"
+            android:inputType="text"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/team_name"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:background="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/nav_bar_shadow" />
+
+    <com.teambition.talk.ui.widget.ThemeButton
+        android:id="@+id/btn_save"
+        style="@style/PositiveButton"
+        android:layout_below="@id/layout_name"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/btn_discard"
+        style="@style/NegativeButton"
+        android:layout_below="@id/layout_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/btn_save"
+        android:enabled="false"
+        android:text="@string/discard" />
+
+    <TextView
+        android:id="@+id/section_show_qr_code"
+        style="@style/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/btn_save"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/ic_qrcode"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/qr_code" />
+
+    <TextView
+        android:id="@+id/section_share_invitation"
+        style="@style/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/section_show_qr_code"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/ic_share_grey"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/share_team_invite" />
+
+</RelativeLayout>

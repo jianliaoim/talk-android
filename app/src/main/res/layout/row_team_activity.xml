@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item"
+        android:padding="16dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="20dp"
+            app:riv_oval="true"
+            tools:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/material_grey_500"
+            android:textSize="12sp"
+            tools:text="02/15 16:34"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:layout_marginRight="64dp"
+                android:textSize="14sp"
+                android:textColor="@color/material_grey_600"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:text="徐亮 创建了一个想法法法想法想法"/>
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/tv_content"
+                style="@style/ItemSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/icon"
+                android:textSize="16sp"
+                android:textColor="@color/material_grey_900"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                tools:visibility="visible"
+                tools:text="你的理想办公环境是怎样的"/>
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/icon"
+                android:layout_below="@id/tv_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:textColor="@color/material_grey_900"
+                android:maxLines="3"
+                android:ellipsize="end"
+                tools:visibility="gone"
+                tools:text="我有一个不错的营销方案，现在提出来有点晚了，就当和大伙儿分享一下，为以后的推广策划做个启发吧。在微博上发起一个关于理想的办公环境的话题，邀请"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image_preview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_toRightOf="@id/icon"
+                android:layout_below="@id/tv_detail"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="2dp"
+                tools:visibility="gone"
+                tools:src="@drawable/img_user_guide1"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</FrameLayout>

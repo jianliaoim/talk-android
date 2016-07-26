@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/topic_setting_info"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/info"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/topic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/topic_name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_goal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/layout_name"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/topic_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/topic_goal"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.teambition.talk.ui.widget.ThemeButton
+        android:id="@+id/btn_save"
+        style="@style/PositiveButton"
+        android:layout_below="@id/layout_goal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:enabled="false"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/btn_discard"
+        style="@style/NegativeButton"
+        android:layout_below="@id/layout_goal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/btn_save"
+        android:layout_toRightOf="@id/btn_save"
+        android:enabled="false"
+        android:text="@string/topic_setting_discard" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/btn_discard"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/topic_setting_setting"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_visibility"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/setting"
+        android:background="@drawable/selector_btn_white"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_private_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:text="@string/topic_is_private"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/topic_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/material_grey_900"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/member"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/layout_visibility"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/topic_setting_member"
+        android:textColor="#808080"
+        android:textSize="14sp" />
+</RelativeLayout>

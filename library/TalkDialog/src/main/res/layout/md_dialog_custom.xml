@@ -1,0 +1,35 @@
+<com.talk.dialog.internal.MDRootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/md_stub_titleframe" />
+
+    <LinearLayout
+        android:id="@+id/customViewFrame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/md_content_textsize"
+            android:layout_marginTop="@dimen/md_dialog_frame_margin"
+            android:layout_marginBottom="@dimen/md_dialog_frame_margin"
+            android:layout_marginLeft="@dimen/md_dialog_frame_margin"
+            android:layout_marginRight="@dimen/md_dialog_frame_margin"
+            tools:text="Message"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="UnusedAttribute" />
+
+    </LinearLayout>
+
+    <include layout="@layout/md_stub_actionbuttons" />
+
+</com.talk.dialog.internal.MDRootLayout>

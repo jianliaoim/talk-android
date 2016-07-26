@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_story_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="@string/action_story_edit"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/action_story_setting"
+        android:icon="@drawable/ic_setting_white"
+        android:title="@string/action_story_setting"
+        app:showAsAction="always" />
+</menu>

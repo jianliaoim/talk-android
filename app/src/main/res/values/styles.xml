@@ -1,0 +1,371 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Talk" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/material_grey_400</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="popupMenuStyle">@style/Base.Widget.AppCompat.Light.PopupMenu.Overflow</item>
+        <item name="spbStyle">@style/Widget.Talk.ProgressBar</item>
+        <item name="cpbStyle">@style/Widget.Talk.ProgressBar.Circle</item>
+
+        <!-- 2015-11-10号更改主题时添加 -->
+        <item name="talkColorPrimary">@color/colorPrimary</item>
+        <item name="talkColorDark">@color/colorPrimaryDark</item>
+        <item name="talkColorLight">@color/talk_ocean_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_ocean</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_ocean_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_ocean_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.CustomDialog" parent="Theme.Talk">
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.NoActionBar" parent="Theme.Talk">
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="talkColorPrimary">@color/colorPrimary</item>
+        <item name="talkColorDark">@color/colorPrimaryDark</item>
+        <item name="talkColorLight">@color/talk_ocean_light</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.Talk">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Talk.Splash" parent="Theme.Talk">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+    <!-- colorful themes -->
+
+    <style name="Theme.Talk.White" parent="Theme.Talk">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="Theme.Talk.Account" parent="Theme.Talk">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="talkColorPrimary">@color/colorPrimary</item>
+        <item name="talkColorDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Theme.Talk.Grape" parent="Theme.Talk">
+        <item name="colorPrimary">@color/talk_grape</item>
+        <item name="colorPrimaryDark">@color/talk_grape_dark</item>
+        <item name="colorAccent">@color/talk_grape</item>
+        <item name="colorControlActivated">@color/talk_grape</item>
+        <item name="colorControlHighlight">@color/talk_grape</item>
+        <item name="talkColorPrimary">@color/talk_grape</item>
+        <item name="talkColorDark">@color/talk_grape_dark</item>
+        <item name="talkColorLight">@color/talk_grape_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_grape</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_grape_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_grape_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.BlueBerry" parent="Theme.Talk">
+        <item name="colorPrimary">@color/talk_blueberry</item>
+        <item name="colorPrimaryDark">@color/talk_blueberry_dark</item>
+        <item name="colorAccent">@color/talk_blueberry</item>
+        <item name="colorControlActivated">@color/talk_blueberry</item>
+        <item name="colorControlHighlight">@color/talk_blueberry</item>
+        <item name="talkColorPrimary">@color/talk_blueberry</item>
+        <item name="talkColorDark">@color/talk_blueberry_dark</item>
+        <item name="talkColorLight">@color/talk_blueberry_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_blueberry</item>
+        <item name="talkMessageBackgroundWithBorder">
+            @drawable/selector_message_blueberry_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_blueberry_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.Ocean" parent="Theme.Talk">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="talkColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/material_grey_500</item>
+        <item name="talkColorDark">@color/colorPrimaryDark</item>
+        <item name="talkColorLight">@color/talk_ocean_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_ocean</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_ocean_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_ocean_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.Mint" parent="Theme.Talk">
+        <item name="colorPrimary">@color/talk_mint</item>
+        <item name="colorPrimaryDark">@color/talk_mint_dark</item>
+        <item name="colorAccent">@color/talk_mint</item>
+        <item name="colorControlActivated">@color/talk_mint</item>
+        <item name="colorControlHighlight">@color/talk_mint</item>
+        <item name="talkColorPrimary">@color/talk_mint</item>
+        <item name="talkColorDark">@color/talk_mint_dark</item>
+        <item name="talkColorLight">@color/talk_mint_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_mint</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_mint_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_mint_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.Tea" parent="Theme.Talk">
+        <item name="colorPrimary">@color/talk_tea</item>
+        <item name="colorPrimaryDark">@color/talk_tea_dark</item>
+        <item name="colorAccent">@color/talk_tea</item>
+        <item name="colorControlActivated">@color/talk_tea</item>
+        <item name="colorControlHighlight">@color/talk_tea</item>
+        <item name="talkColorPrimary">@color/talk_tea</item>
+        <item name="talkColorDark">@color/talk_tea_dark</item>
+        <item name="talkColorLight">@color/talk_tea_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_tea</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_tea_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_tea_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="Theme.Talk.Ink" parent="Theme.Talk">
+        <item name="colorPrimary">@color/talk_ink</item>
+        <item name="colorPrimaryDark">@color/talk_ink_dark</item>
+        <item name="colorAccent">@color/talk_ink</item>
+        <item name="colorControlActivated">@color/talk_ink</item>
+        <item name="colorControlHighlight">@color/talk_ink</item>
+        <item name="talkColorPrimary">@color/talk_ink</item>
+        <item name="talkColorDark">@color/talk_ink_dark</item>
+        <item name="talkColorLight">@color/talk_ink_light</item>
+        <item name="talkMessageBackground">@drawable/selector_message_ink</item>
+        <item name="talkMessageBackgroundWithBorder">@drawable/selector_message_ink_with_border
+        </item>
+        <item name="talkMessageBackgroundWhiteWithBorder">
+            @drawable/selector_message_white_with_ink_border
+        </item>
+        <item name="android:dialogTheme">@style/Talk.Menu.Dialog</item>
+    </style>
+
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- progressbar -->
+
+    <style name="Widget.Talk.ProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">60dp</item>
+        <item name="spb_sections_count">2</item>
+        <item name="spb_speed">1.2</item>
+        <item name="spb_progressiveStart_speed">1</item>
+        <item name="spb_progressiveStop_speed">1.2</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">false</item>
+        <item name="spb_reversed">false</item>
+        <item name="spb_color">@color/material_light_blue_500</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="android:background">@color/material_light_blue_100</item>
+        <item name="android:minHeight">3dp</item>
+    </style>
+
+    <style name="Widget.Talk.ProgressBar.Circle" parent="android:Widget.Holo.ProgressBar">
+        <item name="cpb_color">@color/material_light_blue_500</item>
+        <item name="cpb_stroke_width">2dp</item>
+        <item name="cpb_min_sweep_angle">@integer/cpb_default_min_sweep_angle</item>
+        <item name="cpb_max_sweep_angle">@integer/cpb_default_max_sweep_angle</item>
+        <item name="cpb_sweep_speed">@string/cpb_default_sweep_speed</item>
+        <item name="cpb_rotation_speed">@string/cpb_default_rotation_speed</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:maxWidth">20dp</item>
+    </style>
+
+    <style name="Widget.Talk.ProgressBar.Circle.Large" parent="android:Widget.Holo.ProgressBar">
+        <item name="cpb_color">@color/material_light_blue_500</item>
+        <item name="cpb_stroke_width">@dimen/cpb_default_stroke_width</item>
+        <item name="cpb_min_sweep_angle">@integer/cpb_default_min_sweep_angle</item>
+        <item name="cpb_max_sweep_angle">@integer/cpb_default_max_sweep_angle</item>
+        <item name="cpb_sweep_speed">@string/cpb_default_sweep_speed</item>
+        <item name="cpb_rotation_speed">@string/cpb_default_rotation_speed</item>
+    </style>
+
+    <!-- text style -->
+
+    <style name="TabTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="ItemTitle">
+        <item name="android:textColor">@color/material_grey_900</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ItemSubTitle">
+        <item name="android:textColor">@color/material_grey_700</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- listView style -->
+
+    <style name="BaseListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:divider">@null</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- chat room style -->
+    <style name="MessageListItemName">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#AAAAAA</item>
+    </style>
+
+    <style name="MessageListItemMsg">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/material_grey_900</item>
+    </style>
+
+    <style name="MessageListItemTime">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/material_grey_400</item>
+    </style>
+
+    <!-- dialog -->
+    <style name="Talk.Menu.Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowAnimationStyle">@style/Menu.Dialog.Animation</item>
+    </style>
+
+    <style name="Menu.Dialog.Animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="FloatButtonLabel">
+        <item name="android:textColor">@color/material_grey_600</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_float_button</item>
+    </style>
+
+    <style name="PositiveButton">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:textColor">@drawable/selector_positive_button_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/selector_positive_button</item>
+    </style>
+
+    <style name="NegativeButton">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:textColor">@drawable/selector_negative_button_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/selector_negative_button</item>
+    </style>
+
+    <style name="Talk_Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowAnimationStyle">@style/Talk_Animation</item>
+    </style>
+
+    <style name="Talk_Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="ShareDialogListItem">
+        <item name="android:textColor">@color/material_grey_600</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MSV_ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">@dimen/search_icon_padding</item>
+        <item name="android:paddingRight">@dimen/search_icon_padding</item>
+    </style>
+
+    <style name="ShowcaseTheme" parent="ShowcaseView">
+        <item name="sv_backgroundColor">#d6000000</item>
+        <item name="sv_titleTextAppearance">@style/ShowcaseCustomTitle</item>
+    </style>
+
+    <style name="ShowcaseCustomTitle" parent="TextAppearance.ShowcaseView.Title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="DrawerItemTitle">
+        <item name="android:textColor">@color/material_grey_600</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

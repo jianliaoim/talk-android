@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/material_grey_300"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_create_team"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/divider"
+        android:background="@drawable/bg_item"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_add_team" />
+
+        <TextView
+            style="@style/DrawerItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_team" />
+
+        <TextView
+            style="@style/ItemSubTitle"
+            android:textSize="12sp"
+            android:textColor="@color/material_grey_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="38dp"
+            android:text="@string/create_team_description" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_scan_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_item"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_scan" />
+
+        <TextView
+            style="@style/DrawerItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/scan_qr_code" />
+
+        <TextView
+            style="@style/ItemSubTitle"
+            android:textSize="12sp"
+            android:textColor="@color/material_grey_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="38dp"
+            android:text="@string/scan_qr_code_description" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sync_teambition"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_item"
+        android:onClick="onClick">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_company" />
+
+        <TextView
+            style="@style/DrawerItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/sync_teambition" />
+
+        <TextView
+            style="@style/ItemSubTitle"
+            android:textSize="12sp"
+            android:textColor="@color/material_grey_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="38dp"
+            android:text="@string/sync_teambition_description" />
+    </RelativeLayout>
+</LinearLayout>

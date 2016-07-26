@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.teambition.talk.ui.widget.KeyBoardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ListView
+        android:id="@+id/message_list"
+        style="@style/BaseListView"
+        android:layout_above="@+id/input_leave_member_layout"
+        android:layout_below="@id/container"
+        android:background="#F2F2F2"
+        android:stackFromBottom="true" />
+
+    <View
+        android:id="@+id/view_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_leave_member_layout"
+        android:layout_below="@id/toolbar"
+        android:alpha="0.0"
+        android:background="@android:color/black"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/container"
+        android:background="@drawable/nav_bar_shadow" />
+
+    <include
+        layout="@layout/layout_network_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container" />
+
+    <FrameLayout
+        android:id="@+id/voice_tip_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_leave_member_layout"
+        android:layout_below="@id/container"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/voice_tip_text"
+            android:layout_width="172dp"
+            android:layout_height="172dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/bg_voice_tip"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="32dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="33dp"
+            android:text="@string/voice_cancel_tip"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_voice_tip"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="129dp"
+            android:background="@drawable/ic_voice_tip" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_unread_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_above="@id/input_leave_member_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_new_message_tip"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/unread_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_arrow_down_thin" />
+
+        <TextView
+            android:id="@+id/unread_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/unread_arrow"
+            android:text="@string/unread_tip"
+            android:textColor="?attr/talkColorPrimary"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/input_leave_member_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layout_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/input_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="49dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/material_grey_300" />
+
+                <ImageButton
+                    android:id="@+id/img_more"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/selector_add"
+                    android:contentDescription="@null" />
+
+                <CheckBox
+                    android:id="@+id/img_emoji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="48dp"
+                    android:background="@drawable/selector_checkbox_emoji"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center" />
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/et_msg"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginLeft="96dp"
+                    android:layout_marginRight="56dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/send_msg_hint"
+                    android:maxHeight="100dp"
+                    android:maxLength="1000"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/material_grey_900"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/voice_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="96dp"
+                    android:layout_marginRight="56dp"
+                    android:background="@drawable/bg_voice_bar"
+                    android:gravity="center"
+                    android:text="@string/hold_to_speak"
+                    android:textColor="#A2A2A2"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/msg_send"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_voice"
+                    android:contentDescription="@null" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/emojicons"
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_more"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#FAFAFA"
+                android:clipToPadding="false"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_leave_member_text"
+            style="@style/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_chat_leave_member"
+            android:gravity="center"
+            android:text="@string/chat_leave_member"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_light_mask"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_grey_300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preview"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/preview_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/talkColorPrimary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.teambition.talk.ui.widget.ThemeButton
+            android:id="@+id/join_btn"
+            style="@style/PositiveButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/topic_join" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/talkColorPrimary"
+            android:indeterminate="true"
+            app:spb_color="@color/white"
+            app:spb_generate_background_with_colors="false"
+            app:spb_interpolator="spb_interpolator_acceleratedecelerate"
+            app:spb_mirror_mode="true"
+            app:spb_progressiveStart_activated="true"
+            app:spb_progressiveStart_speed="2"
+            app:spb_progressiveStop_speed="3.4"
+            app:spb_reversed="true"
+            app:spb_sections_count="1"
+            app:spb_speed="1.7"
+            app:spb_stroke_separator_length="320dp" />
+
+    </LinearLayout>
+
+</com.teambition.talk.ui.widget.KeyBoardLayout>

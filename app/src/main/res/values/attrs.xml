@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="talkColorPrimary" format="color|reference" />
+    <attr name="talkColorDark" format="color|reference" />
+    <attr name="talkColorLight" format="color|reference" />
+    <attr name="talkMessageBackground" format="reference" />
+    <attr name="talkMessageBackgroundWithBorder" format="reference" />
+    <attr name="talkMessageBackgroundWhiteWithBorder" format="reference" />
+
+    <!-- Ripple Util -->
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="ripple_Color" format="color" />
+        <attr name="rippleDimension" format="dimension" />
+        <attr name="rippleOverlay" format="boolean" />
+        <attr name="rippleAlpha" format="float" />
+        <attr name="rippleDuration" format="integer" />
+        <attr name="rippleFadeDuration" format="integer" />
+        <attr name="rippleHover" format="boolean" />
+        <attr name="rippleBackground" format="color" />
+        <attr name="rippleDelayClick" format="boolean" />
+        <attr name="ripplePersistent" format="boolean" />
+        <attr name="rippleInAdapter" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CodeInputView">
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="lineColor" format="color" />
+        <attr name="lineInterval" format="dimension" />
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color" />
+        <attr name="codeSize" format="integer" />
+        <attr name="marginBottom" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSearchView">
+        <attr name="searchBackground" format="integer" />
+        <attr name="searchVoiceIcon" format="integer" />
+        <attr name="searchCloseIcon" format="integer" />
+        <attr name="searchBackIcon" format="integer" />
+        <attr name="searchSuggestionIcon" format="integer" />
+        <attr name="searchSuggestionBackground" format="integer" />
+        <attr name="android:hint" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/black">
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/progress_bar"
+        layout="@layout/include_progress" />
+
+    <TextView
+        android:id="@+id/file_scheme"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="none"
+        android:visibility="gone"/>
+</FrameLayout>

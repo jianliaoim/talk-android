@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+
+version '0.0.1'
+group 'com.jni.bitmap_operations'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOL_VERSION
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            jni.srcDirs = ['jni']
+        }
+    }
+
+    defaultConfig {
+        ndk {
+            moduleName "JniBitmapOperationsLibrary"
+            ldLibs "log", "jnigraphics"
+            cFlags "-DANDROID_NDK_HOME"
+            stl "stlport_shared"
+            abiFilters "armeabi", "arm64-v8a", "x86", "x86_64", "armeabi-v7a"
+        }
+    }
+
+
+/*
+    task buildNative(type: Exec, description: 'Compile JNI source via NDK') {
+        def ndkDir = android.plugin.ndkFolder
+        commandLine "$ndkDir/ndk-build",
+                '-C', file('jni').absolutePath,
+                '-j', Runtime.runtime.availableProcessors(),
+                'all',
+                'NDK_DEBUG=1'
+    }
+
+    task cleanNative(type: Exec, description: 'Clean JNI object files') {
+        def ndkDir = android.plugin.ndkFolder
+        commandLine "$ndkDir/ndk-build",
+                '-C', file('jni').absolutePath,
+                'clean'
+    }
+
+    clean.dependsOn 'cleanNative'
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn buildNative
+    }
+    */
+}

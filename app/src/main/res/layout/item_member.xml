@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_item">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:gravity="center_vertical"
+        android:textColor="?attr/talkColorPrimary"
+        android:textSize="24sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="A" />
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@null"
+        tools:src="@drawable/ic_me"
+        tools:visibility="visible"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/flag_unread"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_unread"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/contacts_text_left_margin"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="156dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_not_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_visit"
+            android:textColor="@color/material_grey_300"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/contacts_avatar_right_margin"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+</RelativeLayout>

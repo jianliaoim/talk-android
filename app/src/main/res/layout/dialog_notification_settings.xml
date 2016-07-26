@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:gravity="start|center_vertical">
+
+            <RadioButton
+                android:id="@+id/enable_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/md_listitem_height"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:minHeight="@dimen/md_listitem_height"
+                android:text="@string/enable_notifications"
+                android:gravity="center_vertical"
+                android:textColor="@color/material_grey_700"
+                android:textSize="@dimen/md_listitem_textsize"
+                android:paddingLeft="@dimen/md_listitem_control_margin"
+                android:paddingStart="@dimen/md_listitem_control_margin"
+                tools:ignore="NewApi,RtlSymmetry" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:gravity="start|center_vertical">
+
+            <RadioButton
+                android:id="@+id/only_mention_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/md_listitem_height"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:minHeight="@dimen/md_listitem_height"
+                android:text="@string/only_at_notifications"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/md_listitem_textsize"
+                android:textColor="@color/material_grey_700"
+                android:paddingLeft="@dimen/md_listitem_control_margin"
+                android:paddingStart="@dimen/md_listitem_control_margin"
+                tools:ignore="NewApi,RtlSymmetry" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:gravity="start|center_vertical">
+
+            <RadioButton
+                android:id="@+id/disable_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/md_listitem_height"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:minHeight="@dimen/md_listitem_height"
+                android:text="@string/disable_notifications"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/md_listitem_textsize"
+                android:textColor="@color/material_grey_700"
+                android:paddingLeft="@dimen/md_listitem_control_margin"
+                android:paddingStart="@dimen/md_listitem_control_margin"
+                tools:ignore="NewApi,RtlSymmetry" />
+
+        </FrameLayout>
+
+    </RadioGroup>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/push_on_work_time"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="16sp"
+        android:textColor="@color/material_grey_700"
+        android:text="@string/push_on_work_time"/>
+
+</LinearLayout>

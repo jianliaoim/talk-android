@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teambition.talk">
+
+    <uses-permission android:name="com.google.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.google.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.CREATE_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <permission
+        android:name="com.teambition.talk.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.teambition.talk.permission.MIPUSH_RECEIVE" />
+
+    <permission
+        android:name="com.teambition.talk.permission.WHISPER"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.teambition.talk.permission.WHISPER" />
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Talk" >
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@string/umeng_app_key" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:resource="@string/baidu_api_key" />
+        <meta-data
+            android:name="WHISPER-APP-KEY"
+            android:value="@string/tps_key" />
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Talk.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.Oauth2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.activity.FindPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.activity.UnionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ScannerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChooseTeamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Talk.Account">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="tb-talk"
+                    android:host="team_invite"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.TeamSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddTeamMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LocalContactsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".ui.activity.AddTagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.activity.TeamTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TagEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.activity.TagSearchWithMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TopicSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Talk.CustomDialog" />
+        <activity
+            android:name=".ui.activity.StorySettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.activity.ArchivedTopicActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RichContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PreferenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AccountsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SelectImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SelectMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ImageReviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ItemPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ChatPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FavoritesPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CodePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddonsWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ItemsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FavoritesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AudioDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RepostAndShareActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.LeaveMemberActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.MemberActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.PickCountryCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebContainerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SyncTeambitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MultiCallActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.ChooseMemberActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.CreateFileStoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.CreateTopicStoryActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.CreateLinkStoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+        <activity android:name=".ui.activity.EditFileStoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.EditTopicStoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.EditLinkStoryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.GroupActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.TopicActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.EditGroupNameActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.GroupMemberActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity android:name=".ui.activity.FilePreViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.GuideActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.activity.MentionedMeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.MessageSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".ui.activity.MentionReceiptActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <receiver android:name=".PhoneReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.MessageService"
+            android:exported="false" />
+        <service
+            android:name=".service.SyncService"
+            android:exported="false" />
+
+        <receiver android:name=".receiver.NetworkStateReceiver" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- xiaomi push -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+
+        <receiver
+            android:name=".receiver.XiaomiPushReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Baidu location -->
+        <service
+            android:name="com.baidu.location.f"
+            android:process=":remote" >
+        </service>
+
+        <!--Google Analytics-->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+    </application>
+
+</manifest>

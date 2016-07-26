@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/tv_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_star"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/favorites_items"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_items"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/more_items"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_tag"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/tag"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_at_me"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_mentioned_me"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/at_me"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/material_grey_300" />
+
+    <TextView
+        android:id="@+id/tv_addons"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_addons"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/addons_items"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_team_setting"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_item"
+        android:drawableLeft="@drawable/img_team_setting"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/team_setting_items"
+        android:textColor="@color/material_grey_900"
+        android:textSize="16sp" />
+
+</LinearLayout>

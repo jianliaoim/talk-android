@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">简聊</string>
+
+    <!-- base -->
+    <eat-comment />
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="discard">放弃更改</string>
+    <string name="change">更改</string>
+    <string name="reset">重置</string>
+    <string name="none">暂无</string>
+    <string name="wait">请稍候&#8230;</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="me">我</string>
+    <string name="name">姓名</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="save_to_local">保存到本地</string>
+    <string name="favorite">收藏</string>
+    <string name="copy">复制</string>
+    <string name="tag">标签</string>
+    <string name="general">公告板</string>
+    <string name="talk_ai">小艾</string>
+    <string name="talk_ai_py">xiaoai</string>
+    <string name="i_know">我知道了</string>
+    <string name="invite">立即邀请</string>
+    <string name="not_mention">不再提醒</string>
+    <string name="email">邮箱</string>
+
+    <!-- notification -->
+    <eat-comment />
+    <string name="auth_failed">登录过期，请重新登录</string>
+    <string name="network_failed">请检查网络</string>
+    <string name="update_success">更新成功</string>
+    <string name="title_quit_topic">退出话题</string>
+    <string name="title_delete_topic">删除话题</string>
+    <string name="title_archive_topic">归档话题</string>
+    <string name="title_remove_member">移除成员</string>
+    <string name="title_delete_message">删除消息</string>
+    <string name="message_delete_message">确定要删除消息吗？</string>
+    <string name="title_delete_favorite">删除收藏</string>
+    <string name="message_delete_favorite">确定要删除这些收藏吗？</string>
+    <string name="confirm_quit_topic">确认退出该话题？退出后你可以在「可加入话题」列表再次加入</string>
+    <string name="confirm_quit_topic_private">确认退出该话题？</string>
+    <string name="confirm_delete_topic">确认删除该话题？该话题的所有消息记录将被永久删除。</string>
+    <string name="confirm_archive_topic">确认归档该话题？归档话题在「话题列表」的最下方，你可以随时恢复。</string>
+    <string name="confirm_remove_member_from_room">确定要将该成员移出话题吗？</string>
+    <string name="confirm_remove_member_from_team">确定要将该成员移出团队吗？</string>
+    <string name="title_quit_team">退出当前团队</string>
+    <string name="confirm_quit_team">确定要退出当前团队吗？</string>
+    <string name="new_message">您有新的消息</string>
+    <string name="input_email">请输入邮箱</string>
+    <string name="email_has_not_register">该邮箱尚未注册或已加入团队</string>
+    <string name="name_empty">名称不能为空</string>
+    <string name="confirm_download">确定要下载该文件吗？</string>
+    <string name="file_too_large">文件大于500k，确定要使用移动数据下载吗？</string>
+    <string name="download_finish">下载完成</string>
+    <string name="download_finish_message" formatted="false">文件已保存至 %s 点击确认将检测合适的应用打开。</string>
+    <string name="save_finish_message" formatted="false">文件已保存至 %s </string>
+    <string name="not_support_file_type">暂不支持该文件类型</string>
+    <string name="anonymous_user">匿名用户</string>
+    <string name="take_photo">拍照</string>
+    <string name="audio_too_short">录音时间太短</string>
+    <string name="download_file_title">下载并打开</string>
+    <string name="download_file_message" formatted="false">点击确定开始下载文件(%s)。</string>
+    <string name="favorite_success">收藏成功</string>
+    <string name="copied_to_clipboard">已复制</string>
+
+    <!-- tab title -->
+    <eat-comment />
+    <string name="tab_recent">最近聊天</string>
+    <string name="tab_contact">通讯录</string>
+    <string name="tab_more">更多</string>
+
+    <!-- title -->
+    <string name="title_select_image">选择图片</string>
+
+    <!-- fab -->
+    <string name="fab_type_group">话题</string>
+    <string name="fab_type_dms">私聊</string>
+    <string name="fab_type_topic">想法</string>
+    <string name="fab_type_file">图片</string>
+    <string name="fab_type_link">链接</string>
+
+    <!-- menu -->
+    <eat-comment />
+    <string name="action_next">下一步</string>
+    <string name="action_send">发送</string>
+    <string name="action_done">完成</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_search">搜索</string>
+    <string name="action_call">打电话</string>
+    <string name="action_add_member">添加成员</string>
+    <string name="action_add_topic">添加话题</string>
+    <string name="action_add_group">添加新分组</string>
+    <string name="action_archive_topic">归档话题</string>
+    <string name="action_delete_topic">删除话题</string>
+    <string name="action_topic_setting">话题设置</string>
+    <string name="action_story_setting">设置</string>
+    <string name="action_story_edit">编辑</string>
+    <string name="action_quit_topic">退出话题</string>
+    <string name="action_edit_profile">个人设置</string>
+    <string name="action_team_setting">团队设置</string>
+    <string name="action_quit_team">退出团队</string>
+    <string name="action_set_admin">设为管理员</string>
+    <string name="action_set_normal">取消管理员</string>
+    <string name="action_kick_out">从团队移除</string>
+    <string name="action_message">发送消息</string>
+    <string name="action_delete">删除</string>
+    <string name="action_select_img">选择图片</string>
+    <string name="action_delete_story">删除story</string>
+    <string name="action_quit_story">退出story</string>
+    <string name="action_context">查看上下文</string>
+
+    <!-- recent -->
+    <eat-comment />
+    <string name="recent_welcome_to_talk">还没有新消息</string>
+    <string name="recent_welcome_message">马上进入话题发起讨论吧！</string>
+    <string name="recent_general">开始聊天</string>
+    <string name="pin_recent">置顶通知</string>
+    <string name="unpin_recent">取消置顶</string>
+    <string name="hide_recent">隐藏通知</string>
+    <string name="mute_recent">关闭提醒</string>
+    <string name="un_mute_recent">打开提醒</string>
+
+    <!-- setting -->
+    <eat-comment />
+    <string name="title_notification_setting">通知设置</string>
+    <string name="push_on_work_time">只在8:00-22:00接收通知</string>
+    <string name="enable_notifications">开启通知</string>
+    <string name="only_at_notifications">仅通知与我相关消息</string>
+    <string name="disable_notifications">关闭通知</string>
+
+    <!-- personal preference -->
+    <eat-comment />
+    <string name="mobile">手机</string>
+    <string name="alias_in_team">团队昵称</string>
+    <string name="hide_phone_in_team">在团队中隐藏电话号码</string>
+    <string name="confirm_discard">确定要放弃本次编辑吗？</string>
+    <string name="title_discard">放弃修改</string>
+    <string name="preference_linked_accounts">帐号绑定</string>
+    <string name="preference_notify">通知设置</string>
+    <string name="preference_sign_out">退出当前帐号</string>
+    <string name="account_phone">电话</string>
+    <string name="account_teambition">Teambition</string>
+    <string name="account_empty">未绑定</string>
+    <string name="account_bind">绑定</string>
+    <string name="account_unbind">解绑</string>
+    <string name="account_change">更换</string>
+
+    <!-- team -->
+    <eat-comment />
+    <string name="team">团队</string>
+    <string name="hint_create_team">团队名称</string>
+    <string name="create_team">创建新团队</string>
+    <string name="create_team_description">创建一个属于你的团队</string>
+    <string name="scan_qr_code">扫码加入团队</string>
+    <string name="scan_qr_code_description">扫码加入已存在的团队</string>
+    <string name="sync_teambition">从 Teambition 企业同步团队</string>
+    <string name="sync_teambition_description">将所有企业成员同步至一个新团队</string>
+    <string name="scan_qr_code_to_join_team">扫描二维码加入团队</string>
+    <string name="no_team_error">未发现团队信息</string>
+    <string name="file_type_error">图片格式有误</string>
+    <string name="qr_code_refresh_error">二维码刷新失败</string>
+    <string name="add_member_success">添加成功</string>
+    <string name="copied_to_clipboard_and_gowx">已复制，前往微信粘贴</string>
+    <string name="wechat_not_installed" >未安装微信</string>
+    <string name="wechat">微信</string>
+    <string name="moment">朋友圈</string>
+    <string name="system_share">系统分享</string>
+
+    <!-- topic -->
+    <eat-comment />
+    <string name="topic_join">加入</string>
+    <string name="group_already_joined">已加入话题</string>
+    <string name="group_to_join">可加入话题</string>
+    <string name="group_pinned">置顶话题</string>
+    <string name="pin_topic">置顶话题</string>
+    <string name="unpin_topic">取消置顶</string>
+    <string name="create_group">创建新群组</string>
+    <string name="create_topic">创建新话题</string>
+    <string name="topic_setting">话题设置</string>
+    <string name="topic_name">名称</string>
+    <string name="topic_goal">目标</string>
+    <string name="topic_visibility">访问权限</string>
+    <string name="topic_is_private">私有话题</string>
+    <string name="topic_is_mute">关闭提醒</string>
+    <string name="topic_is_pin">置顶</string>
+    <string name="topic_color">话题颜色</string>
+    <string name="add_new_members">邀请成员</string>
+    <string name="add_from_team">从团队中选择成员</string>
+    <string name="title_choose_member">选择成员</string>
+    <string name="topic_private">话题成员可见</string>
+    <string name="topic_public">团队成员可见</string>
+    <string name="archived_room">查看归档话题</string>
+    <string name="no_archived_room">目前没有归档话题</string>
+    <string name="restore_room">恢复话题</string>
+    <string name="restore_room_confirm" formatted="false">确定要恢复话题 %s 吗?</string>
+    <string name="topic_setting_info">信息</string>
+    <string name="topic_setting_setting">设置</string>
+    <string name="topic_setting_member">成员</string>
+    <string name="topic_setting_discard">放弃更改</string>
+    <string name="create_topic_name">话题名称</string>
+
+    <!-- chat -->
+    <eat-comment />
+    <string name="welcome_to_general_talk">开始简聊</string>
+    <string name="message_of_general_talk">这是一个默认所有团队成员都加入的话题\n这里可以发布团队的公告</string>
+    <string name="welcome_to_public_talk">Hi</string>
+    <string name="welcome_to_story_talk">Hi</string>
+    <string name="message_of_public_talk" formatted="false">由%s于%s创建\n点击右上角「设置」按钮\n可邀请更多成员加入话题</string>
+    <string name="message_of_story_talk" formatted="false">这分享由%s于%s发布\n点击右上角「设置」按钮\n看到成员信息。</string>
+    <string name="welcome_to_private_talk">Hi</string>
+    <string name="message_of_private_talk">私聊的消息只有你和对方可见</string>
+    <string name="welcome_to_xiaoai">我是小艾</string>
+    <string name="message_of_xiaoai">简聊官方小助手，第一时间为你\n带来简聊的最新功能</string>
+    <string name="sending">正在发送&#8230;</string>
+    <string name="uploading">正在上传&#8230;</string>
+    <string name="send_failed">发送失败，点击重发</string>
+    <string name="upload_failed">上传失败，点击重新上传</string>
+    <string name="picture">[图片]</string>
+    <string name="audio">[语音]</string>
+    <string name="attachment">[文件]</string>
+    <string name="rich_content">[富文本]</string>
+    <string name="snippet">[代码片段]</string>
+    <string name="preview">你正在预览</string>
+    <string name="unread_tip" formatted="false">%d 条新消息</string>
+    <string name="hold_to_speak">按住说话</string>
+    <string name="release_to_stop">松开结束</string>
+    <string name="voice_cancel_tip">手指上滑\n取消发送</string>
+    <string name="voice_delete_tip">松开手指\n取消发送</string>
+    <string name="audio_download_fail">语音下载失败</string>
+    <string name="app_not_installed">还未安装该应用</string>
+    <string name="tb_not_support">您的teambition客户端还未支持跳转，请更新到最新版</string>
+    <string name="send_msg_hint">写点什么&#8230;</string>
+    <string name="title_receiptor_activity" formatted="false">%d/%d 人收到</string>
+
+    <!-- remote info -->
+    <eat-comment />
+    <string name="info_comment" formatted="false">%s 评论</string>
+    <string name="info_commit_comment" formatted="false">Commit 被评论</string>
+    <string name="info_create" formatted="false">创建分支或者 tag</string>
+    <string name="info_create_integration" formatted="false">%s 创建了聚合服务</string>
+    <string name="info_created_file" formatted="false">上传了附件</string>
+    <string name="info_created_task" formatted="false">%s 创建了任务</string>
+    <string name="info_delete" formatted="false">删除分支或者 tag</string>
+    <string name="info_firim_message" formatted="false">来自 FIR.im 的消息</string>
+    <string name="info_fork" formatted="false">仓库被 Fork</string>
+    <string name="info_github_new_event" formatted="false">来自 GitHub 的事件</string>
+    <string name="info_gitlab_new_event" formatted="false">来自 GitLab 的事件</string>
+    <string name="info_issue_comment" formatted="false">Issue 被评论</string>
+    <string name="info_issue" formatted="false">Issues</string>
+    <string name="info_join_room" formatted="false">%s 加入了话题</string>
+    <string name="info_join_team" formatted="false">%s 加入了团队</string>
+    <string name="info_leave_room" formatted="false">%s 离开了</string>
+    <string name="info_leave_team" formatted="false">%s 离开了团队</string>
+    <string name="info_mention" formatted="false">%s @我</string>
+    <string name="info_merge_request" formatted="false">Merge</string>
+    <string name="info_message" formatted="false">消息</string>
+    <string name="info_new_mail_message" formatted="false">来自Email的分享: </string>
+    <string name="info_pull_request" formatted="false">Pull Request</string>
+    <string name="info_pull_request_review_comment" formatted="false">PR 中增加 Commit</string>
+    <string name="info_push" formatted="false">Push</string>
+    <string name="info_remove_integration" formatted="false">%s 移除了聚合服务</string>
+    <string name="info_repost" formatted="false">%s 转发</string>
+    <string name="info_rss_new_item" formatted="false">新的RSS订阅: </string>
+    <string name="info_update_integration" formatted="false">%s 更新了聚合服务</string>
+    <string name="info_update_purpose" formatted="false">%s 更新了目标: </string>
+    <string name="info_update_topic" formatted="false">%s 更新了话题: </string>
+    <string name="info_weibo_new_comment" formatted="false">来自微博的评论: </string>
+    <string name="info_weibo_new_mention" formatted="false">来自微博的提醒: </string>
+    <string name="info_weibo_new_repost" formatted="false">来自微博的转发: </string>
+    <string name="info_enable_guest" formatted="false">%s 开启访客模式</string>
+    <string name="info_disable_guest" formatted="false">%s 关闭访客模式</string>
+    <string name="info_pin_notification" formatted="false">%s 置顶了通知</string>
+    <string name="info_unpin_notification" formatted="false">%s 取消置顶了通知</string>
+    <string name="info_create_story" formatted="false">%s 发布了分享</string>
+    <string name="info_invite_story_member" formatted="false">%s 添加了讨论成员</string>
+    <string name="info_remove_story_member" formatted="false">%s 移除了讨论成员</string>
+    <string name="info_invite_members" formatted="false">%s 添加了成员</string>
+    <string name="info_remove_members" formatted="false">%s 删除了成员</string>
+    <string name="info_remove_story_confirm" formatted="false">%s 确认移除该成员吗?</string>
+    <string name="info_update_story" formatted="false">%s 更新了分享</string>
+    <string name="info_leave_story" formatted="false">%s 离开了讨论</string>
+    <string name="info_remove_message" formatted="false">%s 删除了消息</string>
+    <string name="info_upload_files" formatted="false">%s 上传了附件</string>
+    <string name="info_new_speech" formatted="false">%s 发来一段语音</string>
+    <string name="info_new_video" formatted="false">%s 发来一段视频</string>
+    <string name="info_invite_you" formatted="false">%s 邀请你加入群聊</string>
+    <string name="info_invite_team_member" formatted="false">%s 邀请了团队成员</string>
+    <string name="info_create_room" formatted="false">%s 创建了话题</string>
+    <string name="info_create_file_story" formatted="false">%s 分享了一个文件</string>
+    <string name="info_create_topic_story" formatted="false">%s 分享了一个想法</string>
+    <string name="info_create_link_story" formatted="false">%s 分享了一个链接</string>
+    <string name="carw_error">抓取错误</string>
+
+    <!-- formatter -->
+    <eat-comment />
+    <string name="date_format">HH:mm</string>
+    <string name="date_format_with_date">MM/dd HH:mm</string>
+    <string name="date_format_with_year">yyyy/MM/dd HH:mm</string>
+    <string name="date_format_only_date">yyyy/MM/dd</string>
+    <string name="date_format_full">yyyy年MM月dd日</string>
+
+    <!-- date & time -->
+    <eat-comment />
+    <string name="just_now">刚刚</string>
+
+    <!-- float action button label -->
+    <eat-comment />
+    <string name="label_new_file">文件</string>
+    <string name="label_new_image">图片</string>
+    <string name="label_new_topic">话题</string>
+    <string name="label_new_link">链接</string>
+
+    <!-- share handler -->
+    <eat-comment />
+    <string name="group_name_topic">话题</string>
+    <string name="group_name_member">成员</string>
+    <string name="share_send">发送</string>
+    <string name="share_cancel">取消</string>
+    <string name="notification_network">请检查网络连接</string>
+    <string name="notification_login">请先登录</string>
+    <string name="notification_choose_team">请选择团队</string>
+
+    <!-- search -->
+    <eat-comment />
+    <string name="search_result_tag_member">成员</string>
+    <string name="search_result_tag_room">话题</string>
+    <string name="search_result_tag_message">消息</string>
+    <string name="search_result_more_member" formatted="false">更多含有关键字“%s”的成员</string>
+    <string name="search_result_more_room" formatted="false">更多含有关键字“%s”的话题</string>
+    <string name="search_result_more_message" formatted="false">更多含有关键字“%s”的消息</string>
+    <string name="search_result_search_message" formatted="false">搜索含有关键字“%s”的消息</string>
+    <string name="search_result_empty" formatted="false">没有找到含有关键字\'%s\'的消息</string>
+
+    <!-- add team member -->
+    <eat-comment />
+    <string name="input_phone_or_email">输入手机号或邮箱</string>
+    <string name="email_and_other_contacts">邮箱邀请</string>
+    <string name="local_contacts">手机联系人</string>
+    <string name="qr_code">团队二维码</string>
+    <string name="sms_title">对方尚未使用简聊</string>
+    <string name="sms_message">你可以通过短信邀请 TA 加入简聊。</string>
+    <string name="email_message">你可以通过邮件邀请 TA 加入简聊。</string>
+    <string name="invitation_sent">邀请已发送</string>
+    <string name="sms_content" formatted="false">邀请你加入 %s 团队，点击 %s 用手机号登录即可加入团队（若已有帐号请绑定手机号）。</string>
+    <string name="not_visit">未启用</string>
+    <string name="not_visit_title">该成员未登录过简聊</string>
+    <string name="not_visit_content">还不能和 TA 聊天，请通知他绑定手机号或者用手机号登录。</string>
+    <string name="share_team_invite">分享团队邀请</string>
+    <string name="share_invite_content" formatted="false">复制这条消息，打开简聊客户端即可加入【%s】团队 %s %s</string>
+
+    <!-- more -->
+    <eat-comment />
+    <string name="more_items">自动整理</string>
+    <string name="favorites_items">个人收藏</string>
+    <string name="addons_items">拓展应用</string>
+    <string name="team_activities">团队动态</string>
+    <string name="team_setting_items">团队设置</string>
+    <string name="at_me">\@我的消息</string>
+
+    <!-- file making up -->
+    <eat-comment />
+    <string name="all">全部结果</string>
+    <string name="menu_filter_file">文件</string>
+    <string name="menu_filter_link">链接</string>
+    <string name="menu_filter_rtf">富文本</string>
+    <string name="menu_snippet">代码片段</string>
+    <string name="hint_search">搜索话题、私聊</string>
+    <string name="no_result_title">没有相应的筛选结果</string>
+    <string name="no_result_message">对话中的文件、富文本和链接将自动出现在这里。</string>
+    <string name="make_up_new_tip_title">自动整理</string>
+    <string name="make_up_new_tip_message">帮你自动列出聊天中的文件、富文本和链接，方便追溯历史消息。</string>
+    <string name="make_up_chat_tip_title">自动整理</string>
+    <string name="make_up_chat_tip_message">你可以在这里查看该聊天中的文件、富文本和链接。</string>
+
+    <!--favorite-->
+    <eat-comment />
+    <string name="search_result_no_favorite" formatted="false">我的收藏中未找到含有关键字\"%s\"的消息</string>
+    <string name="audio_message_name">语音</string>
+    <string name="details">详情</string>
+    <string name="favorites_selected" formatted="false">已选择%d条收藏</string>
+    <string name="favorites_selected_one" formatted="false">已选择1条收藏</string>
+    <string name="no_favorite">你还没有收藏过消息</string>
+    <string name="no_favorite_message">在聊天中长按消息收藏</string>
+
+    <!--mentioned me-->
+    <string name="no_mentioned_me">还没有人提起你</string>
+
+    <!-- new oauth -->
+    <eat-comment />
+    <string name="oauth_begin">手机号登录</string>
+    <string name="oauth_begin_with_teambition">使用 Teambition 帐号登录</string>
+    <string name="oauth_login_phone">用手机号登录</string>
+    <string name="oauth_policy">点击即代表同意我们的 服务条款</string>
+    <string name="oauth_name_empty">姓名不能为空</string>
+    <string name="login_tip">请验证你的手机号码，简聊将会向你发送一条验证短信。</string>
+    <string name="change_binding_tip">请验证新的手机号码，简聊将会向你发送一条验证短信。</string>
+    <string name="change_email_binding_tip">请验证新的邮箱地址，简聊将会向你发送一封验证邮件。</string>
+    <string name="email_login_tip">请验证你的邮箱，简聊将会向你发送一封验证邮件。</string>
+    <string name="country_code">+ 86</string>
+    <string name="input_phone">输入手机号</string>
+    <string name="input_phone_error">手机号码错误</string>
+    <string name="input_email_error">邮箱地址错误</string>
+    <string name="input_phone_error_content">请重新输入你的手机号码。</string>
+    <string name="input_email_error_content">请重新输入你的邮箱地址。</string>
+    <string name="resend">重发</string>
+    <string name="resend_countdown">重发(%s)</string>
+    <string name="send_code_to_phone">已发送验证码至\n%s</string>
+    <string name="input_v_code_title">输入验证码</string>
+    <string name="input_sms_code_error_title">验证码错误</string>
+    <string name="input_sms_code_error_content">请重新输入验证码。</string>
+    <string name="delete_origin_account">该帐号已被创建或绑定</string>
+    <string name="delete_origin_account_content" formatted="false">帐号 %s 已被创建或绑定，如需继续绑定会将原有帐号注销，确定继续？</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bind_mobile_success">你可以使用手机号登录简聊了！</string>
+    <string name="bind_email_success">你可以使用邮箱登录简聊了！</string>
+    <string name="bind_teambition_success">你可以使用 Teambition 帐号登录简聊了！</string>
+    <string name="bind_mobile">绑定手机号</string>
+    <string name="bind_email">绑定邮箱</string>
+    <string name="change_mobile">更换绑定手机号</string>
+    <string name="change_email">更换绑定邮箱</string>
+    <string name="complete_user_info">完善个人信息</string>
+    <string name="unbind">解绑</string>
+    <string name="unbind_teambition_account">解除 Teambition 帐号绑定</string>
+    <string name="unbind_teambition_account_content">解绑后将不能使用该 Teambition 帐号登录，但不会对相应团队产生影响。</string>
+    <string name="talk_email">support@jianliao.com</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password_less_than_6">密码不能小于6位</string>
+    <string name="login_error">邮箱或手机号格式错误</string>
+    <string name="account_exist_error">账号已存在</string>
+    <string name="password_required">请输入密码</string>
+    <string name="password_again">再输一遍密码</string>
+    <string name="password_not_equal">两次密码不一样</string>
+    <string name="check_password_reset_email">重置链接已经发送到您的邮箱</string>
+    <string name="mobile_login">手机号</string>
+    <string name="email_login">邮箱</string>
+    <string name="reset_password">重置密码</string>
+    <string name="find_password">找回密码</string>
+    <string name="email_auth">邮箱登录</string>
+    <string name="mobile_register">手机号注册</string>
+    <string name="email_register">邮箱注册</string>
+    <string name="mobile_find_pwd">手机号找回</string>
+    <string name="email_find_pwd">邮箱找回</string>
+
+    <!-- addons -->
+    <eat-comment />
+    <string name="addons_picture">图片</string>
+    <string name="addons_file">文件</string>
+    <string name="addons_absence">请假单</string>
+    <string name="action_open_browser">浏览器打开</string>
+    <string name="action_copy_link">复制链接</string>
+
+    <!-- tag -->
+    <string name="add_tag">添加标签</string>
+    <string name="input_tag_name_hint">输入标签名称</string>
+    <string name="create_tag_failed">标签已存在</string>
+    <string name="team_tag_empty">还没有标签</string>
+    <string name="tag_message_empty">该标签下还没有消息</string>
+    <string name="team_tag_empty_tip">在聊天中长按消息可添加标签</string>
+    <string name="tag_message_empty_tip">在聊天中长按消息可以添加标签</string>
+    <string name="edit_tag">编辑标签</string>
+    <string name="delete_tag">删除标签</string>
+    <string name="delete_tag_title">是否删除标签</string>
+    <string name="delete_tag_message">将会在所有消息中移除该标签</string>
+
+    <string name="transmit">转发</string>
+    <string name="send_to">发送到</string>
+    <string name="send">发送</string>
+    <string name="confirm_send_to">确定发送到%s</string>
+    <string name="code">代码</string>
+    <string name="sent">已发送</string>
+    <string name="send_favorite_content">发送收藏内容</string>
+    <string name="leave_member">已离开成员</string>
+    <string name="chat_leave_member">该成员已离开团队</string>
+    <string name="already_leave_team">已离开团队</string>
+
+    <string name="hide_chat">隐藏聊天</string>
+
+    <string name="network_state_connected">网络已连接</string>
+    <string name="network_state_connecting">正在连接网络</string>
+    <string name="network_state_disconnected">无法连接网络</string>
+
+    <string name="major_country">热门国家</string>
+
+    <!-- sync teambition -->
+    <eat-comment/>
+    <string name="sync_teambition_title">从 Teambition 企业同步团队</string>
+    <string name="sync_teambition_content">企业管理员可以通过绑定 Teambition 账号，将 Teambition 企业中的成员实时同步到简聊。</string>
+    <string name="sync_team">同步团队</string>
+    <string name="syncing">同步中……</string>
+    <string name="sync_success">同步成功</string>
+    <string name="sync_fail">同步失败</string>
+    <string name="no_team_found">未发现团队</string>
+    <string name="bind_teambition">绑定 Teambition 账号</string>
+    <string name="talk_free_call">简聊免费通话</string>
+    <string name="free_call_tip">绑定手机后, 可以免费打电话啦</string>
+    <string name="a_later_date">以后再说</string>
+    <string name="immediately_using">立即使用</string>
+    <string name="input_name">输入姓名</string>
+    <string name="multi_call">多人通话</string>
+    <string name="multi_call_number">多人通话(%s)</string>
+    <string name="wait_dial_back">等待回拨</string>
+    <string name="meet_listen_call">请接听 %s 的来电</string>
+    <string name="hide_window">隐藏窗口</string>
+    <string name="show_ta">提醒 TA</string>
+    <string name="not_bind_phone">对方未绑定手机</string>
+    <string name="not_bind_phone_tip">该成员未绑定手机, 不能与 TA 进行免费通话</string>
+    <string name="conference_call_number">%s 人电话会议</string>
+    <string name="verification_success">验证成功</string>
+    <string name="verification_success_content">试试给团队成员打个电话吧</string>
+    <string name="admin">%s (管理员)</string>
+    <string name="owner">%s (拥有者)</string>
+    <string name="topic_name_exist">话题名称已经存在</string>
+    <string name="group_name_exist">群组名称已经存在</string>
+    <string name="my_group">成员分组</string>
+
+    <string name="search_hint">搜索</string>
+    <string name="title_create_story">分享想法</string>
+    <string name="title_file_story">分享文件</string>
+    <string name="title_link_story">分享链接</string>
+    <string name="title">一句话概括你的想法</string>
+    <string name="description">详细描述一下</string>
+    <string name="link">链接</string>
+    <string name="input_a_link">输入或粘贴一个网址</string>
+    <string name="link_content">链接内容</string>
+    <string name="clear">清除</string>
+    <string name="crawl">抓取</string>
+    <string name="no_description">暂无描述</string>
+    <string name="create_at" formatted="false">发布于 %s</string>
+
+    <string name="source_image">原图</string>
+    <string name="file_not_exist">文件不存在</string>
+
+    <string name="content_quit_story">确定要离开讨论吗？</string>
+    <string name="content_delete_story">确定要删除讨论吗？</string>
+    <string name="group_manager">分组管理</string>
+    <string name="edit_name">修改名称</string>
+    <string name="title_remove_group">移除分组</string>
+    <string name="info_remove_group_confirm">确认删除该分组吗?</string>
+    <string name="story_already_delete_title">讨论被删除</string>
+    <string name="story_delete_content">这个讨论已经被人删除了</string>
+    <string name="create_story">发布分享</string>
+    <string name="outline">[草稿]</string>
+    <string name="preference_feedback">意见反馈</string>
+    <string name="preference_language">语言</string>
+    <string name="feedback_content_hint">反馈内容</string>
+    <string name="title_captcha_dialog">验证码</string>
+    <string name="refresh">刷新</string>
+    <string name="content_captcha">下面的图片中找出%s</string>
+    <string name="valid_fail">(验证失败)</string>
+    <string name="record_audio_permission_denied">请为简聊打开麦克风权限</string>
+    <string name="record_contacts_permission_denied">请为简聊打开通讯录权限</string>
+    <string name="camera_permission_denied">请为简聊打开相机权限</string>
+    <string name="read_phone_state_permission_denied">请为简聊打开电话权限</string>
+    <string name="sdcard_permission_denied">请为简聊打开本地存储权限</string>
+    <string name="survey_title">简聊3.0调查</string>
+    <string name="survey_content">嗨!小伙伴们使用简聊新版已经有段时间了,来谈谈感受吧.</string>
+    <string name="no_need">不用了</string>
+    <string name="talk_about_feelings">谈谈感受</string>
+
+    <!--user guide-->
+    <string name="guide_text1">出彩设计，革新从未停止</string>
+    <string name="guide_text2">奇思妙想，简聊由此开始</string>
+    <string name="begin_to_experience">开始体验</string>
+    <string name="tips_start_chat">可在此处发起简聊，寻找私聊或话题群聊，或者分享你的想法，文件与链接和你的工作伙伴</string>
+    <string name="tips_expand_story">点击此处可查看详细的想法/图片预览/链接内容</string>
+    <string name="tips_manage_story_member">团队管理员可编辑成员分组，你可通过成员分组快速的添加参与讨论的成员</string>
+    <string name="tips_add_contacts">添加通讯录中的联系人，通讯录仅用于查找联系人，不会泄漏您的隐私</string>
+    <string name="add">添加</string>
+    <string name="talk_web_online">你已经在网页上登录简聊</string>
+    <string name="tips">提示</string>
+    <string name="stop_notification_on_device">停止手机通知</string>
+    <string name="resume_notification_on_device">恢复手机通知</string>
+    <string name="already_mute">已停止手机通知</string>
+    <string name="already_unmute">已恢复手机通知</string>
+    <string name="modify">修改</string>
+    <string name="recommend_not_qqmail">为了邮件能够及时送达到您的邮箱，请尽量不要使用QQ邮箱</string>
+
+    <!--message search-->
+    <string name="all_members">所有成员</string>
+    <string name="all_position">所有位置</string>
+    <string name="not_filter_tag">不过滤标签</string>
+    <string name="all_type">所有类型</string>
+    <string name="one_day_within">一天以内</string>
+    <string name="one_week_within">一周以内</string>
+    <string name="january_within">一月以内</string>
+    <string name="march_within">三月以内</string>
+    <string name="all_tag">全部标签</string>
+    <string name="at_all">所有成员</string>
+    <string name="calendar_error">日程时间无效</string>
+    <string name="send_calendar_items">发送日程</string>
+    <string name="calendar_remind_row">日程将于%s提醒</string>
+
+    <!--team activity-->
+    <string name="no_team_activity">目前还没有团队动态</string>
+    <string name="is_compressed">正在压缩</string>
+</resources>

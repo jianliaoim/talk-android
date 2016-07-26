@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">yuv</string>
+    <string name="play_error">播放出错了</string>
+</resources>

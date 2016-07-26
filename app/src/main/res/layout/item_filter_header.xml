@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_search_dark"
+            android:drawablePadding="32dp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textColor="@color/material_grey_900"
+            android:textColorHint="@color/material_grey_400"
+            android:textSize="16sp">
+
+            <requestFocus />
+        </EditText>
+
+        <FrameLayout
+            android:id="@+id/tv_all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/et_keyword">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_item"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/all"
+                android:textColor="?attr/talkColorPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/done_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@null" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/material_grey_300" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_keyword"
+            android:background="@color/material_grey_300" />
+    </RelativeLayout>
+
+</LinearLayout>

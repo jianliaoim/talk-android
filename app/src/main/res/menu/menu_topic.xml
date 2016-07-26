@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_call"
+        android:title="@string/action_call"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_file_arrange"
+        android:icon="@drawable/ic_menu_arrange"
+        android:title="@string/more_items"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_topic_setting"
+        android:icon="@drawable/ic_setting_white"
+        android:title="@string/action_topic_setting"
+        app:showAsAction="ifRoom" />
+
+</menu>

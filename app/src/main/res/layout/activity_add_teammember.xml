@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/img_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_item"
+            android:src="@drawable/ic_clear_dark"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/img_clear"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/input_phone_or_email"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/material_grey_900"
+            android:textColorHint="@color/material_grey_400"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/material_grey_300" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/section_add_local_contacts"
+        style="@style/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_item"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/local_contacts" />
+
+    <TextView
+        android:id="@+id/section_show_qr_code"
+        style="@style/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/section_add_local_contacts"
+        android:background="@drawable/bg_item"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/qr_code" />
+
+    <TextView
+        android:id="@+id/section_share_invitation"
+        style="@style/ItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/section_show_qr_code"
+        android:background="@drawable/bg_item"
+        android:drawablePadding="32dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/share_team_invite" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/nav_bar_shadow" />
+</RelativeLayout>

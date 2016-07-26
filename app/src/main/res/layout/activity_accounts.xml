@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_account_phone"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_account_phone" />
+
+        <TextView
+            android:id="@+id/tv_status_phone"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:textColor="?attr/talkColorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/tv_status_phone"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/account_phone" />
+
+        <TextView
+            android:id="@+id/tv_account_phone"
+            style="@style/ItemSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="36dp"
+            android:layout_toLeftOf="@id/tv_status_phone"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/account_empty" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_account_email"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/layout_account_phone">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_account_email" />
+
+        <TextView
+            android:id="@+id/tv_status_email"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:textColor="?attr/talkColorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/tv_status_email"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/tv_account_email"
+            style="@style/ItemSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="36dp"
+            android:layout_toLeftOf="@id/tv_status_email"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/account_empty" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_account_teambition"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@id/layout_account_email">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_account_tb" />
+
+        <TextView
+            android:id="@+id/tv_status_teambition"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:textColor="?attr/talkColorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/ItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/tv_status_teambition"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/account_teambition" />
+
+        <TextView
+            android:id="@+id/tv_account_teambition"
+            style="@style/ItemSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="36dp"
+            android:layout_toLeftOf="@id/tv_status_teambition"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/account_empty" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/nav_bar_shadow" />
+
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_name" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/ItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_alias"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_alias" />
+
+                <EditText
+                    android:id="@+id/et_alias"
+                    style="@style/ItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/alias_in_team"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/ItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <com.teambition.talk.ui.widget.ThemeButton
+                    android:id="@+id/btn_save"
+                    style="@style/PositiveButton"
+                    android:layout_marginLeft="72dp"
+                    android:enabled="false"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/btn_discard"
+                    style="@style/NegativeButton"
+                    android:layout_marginLeft="16dp"
+                    android:enabled="false"
+                    android:text="@string/discard" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_hide_phone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_hide" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_hide_phone"
+                    style="@style/ItemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="@string/hide_phone_in_team" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_camera" />
+
+                <com.teambition.talk.ui.widget.ProgressImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp" />
+
+                <Button
+                    android:id="@+id/btn_change_avatar"
+                    style="@style/NegativeButton"
+                    android:text="@string/change" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_linked_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_item_base"
+                android:drawableLeft="@drawable/ic_linked_accounts"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/preference_linked_accounts"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_item_base"
+                android:drawableLeft="@drawable/ic_notify"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/preference_notify"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_item_base"
+                android:drawableLeft="@drawable/ic_language_setting"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/preference_language"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_item_base"
+                android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/preference_feedback"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/bg_item_base"
+                android:drawableLeft="@drawable/ic_sign_out"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@string/preference_sign_out"
+                android:textColor="@color/material_grey_900"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:textColor="@color/material_grey_400"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/nav_bar_shadow" />
+
+</RelativeLayout>

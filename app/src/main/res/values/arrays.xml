@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="file_type_image">
+        <item>jpg</item>
+        <item>png</item>
+        <item>jpeg</item>
+        <item>bmp</item>
+        <item>gif</item>
+    </string-array>
+
+    <string-array name="file_type_text">
+        <item>txt</item>
+        <item>xml</item>
+        <item>sh</item>
+        <item>c</item>
+        <item>conf</item>
+        <item>cpp</item>
+        <item>h</item>
+        <item>java</item>
+        <item>log</item>
+        <item>prop</item>
+        <item>rc</item>
+    </string-array>
+
+    <string-array name="file_type_pdf">
+        <item>pdf</item>
+    </string-array>
+
+    <string-array name="file_type_html">
+        <item>html</item>
+        <item>htm</item>
+    </string-array>
+
+    <string-array name="file_type_audio">
+        <item>mp3</item>
+        <item>wma</item>
+        <item>wmv</item>
+        <item>ogg</item>
+        <item>wav</item>
+        <item>wpga</item>
+        <item>mp2</item>
+    </string-array>
+
+    <string-array name="file_type_video">
+        <item>mp4</item>
+        <item>3gp</item>
+        <item>avi</item>
+        <item>mpe</item>
+        <item>mpeg</item>
+        <item>mpg</item>
+    </string-array>
+
+    <string-array name="file_type_word">
+        <item>doc</item>
+        <item>docx</item>
+    </string-array>
+
+    <string-array name="file_type_excel">
+        <item>xlsx</item>
+        <item>xls</item>
+    </string-array>
+
+    <string-array name="file_type_ppt">
+        <item>ppt</item>
+        <item>pps</item>
+        <item>pptx</item>
+    </string-array>
+
+    <string-array name="file_type_apk">
+        <item>application/vnd.android.package-archive</item>
+        <item>apk</item>
+    </string-array>
+
+    <string-array name="file_type_ai">
+        <item>ai</item>
+    </string-array>
+
+    <string-array name="file_type_css">
+        <item>css</item>
+        <item>css3</item>
+    </string-array>
+
+    <string-array name="file_type_js">
+        <item>js</item>
+    </string-array>
+
+    <string-array name="file_type_zip">
+        <item>zip</item>
+    </string-array>
+    <string-array name="file_type_rar">
+        <item>rar</item>
+    </string-array>
+    <string-array name="file_type_sketch">
+        <item>sketch</item>
+    </string-array>
+
+    <string-array name="language_types">
+        <item>Chinese</item>
+        <item>English</item>
+    </string-array>
+    
+</resources>

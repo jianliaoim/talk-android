@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_id": "talk-android",
+    "project_number": "577479061909",
+    "name": "Talk-Android"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577479061909:android:0f12f0de28ff72a5",
+        "client_id": "android:com.teambition.talk",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.teambition.talk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-58083865-3"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

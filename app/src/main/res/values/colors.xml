@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- talk 3.0 -->
+
+    <color name="colorPrimaryDark">#E85B48</color>
+    <color name="colorPrimary">#FA6855</color>
+    <color name="colorHome">#393C40</color>
+    <color name="talkBlue">#64C4F1</color>
+    <color name="talkRed">#FA6855</color>
+    <color name="talkGreen">#67C395</color>
+    <color name="talkPurple">#945A84</color>
+    <color name="talkYellow">#FFCB2B</color>
+
+    <!-- talk 2.0 -->
+
+    <color name="talk_grape">#883297</color>
+    <color name="talk_grape_dark">#7A2C87</color>
+    <color name="talk_grape_light">#E3CEE6</color>
+    <color name="talk_grape_light_pressed">#DAC7DD</color>
+    <color name="talk_blueberry">#5C6BC0</color>
+    <color name="talk_blueberry_dark">#5260AC</color>
+    <color name="talk_blueberry_light">#D8DCF0</color>
+    <color name="talk_blueberry_light_pressed">#CFD3E7</color>
+    <color name="talk_ocean">#1976D2</color>
+    <color name="talk_ocean_dark">#1169BC</color>
+    <color name="talk_ocean_light">#C8DEF4</color>
+    <color name="talk_ocean_light_pressed">#BFD5EB</color>
+    <color name="talk_mint">#009688</color>
+    <color name="talk_mint_dark">#00867A</color>
+    <color name="talk_mint_light">#C2E6E3</color>
+    <color name="talk_mint_light_pressed">#B9DDDA</color>
+    <color name="talk_tea">#399963</color>
+    <color name="talk_tea_dark">#338958</color>
+    <color name="talk_tea_light">#D0E7DA</color>
+    <color name="talk_tea_light_pressed">#C7DED1</color>
+    <color name="talk_ink">#424242</color>
+    <color name="talk_ink_dark">#3B3B3B</color>
+    <color name="talk_ink_light">#D2D2D2</color>
+    <color name="talk_ink_light_pressed">#C9C9C9</color>
+
+    <color name="talk_purple">#9575CD</color>
+    <color name="talk_indigo">#7986CB</color>
+    <color name="talk_blue">#4FC3F7</color>
+    <color name="talk_blue_dark">#03A9F4</color>
+    <color name="talk_blue_pressed">#47B1E1</color>
+    <color name="talk_cyan">#4DB6AC</color>
+    <color name="talk_cyan_pressed">#45A39A</color>
+    <color name="talk_grass">#9CCC65</color>
+    <color name="talk_yellow">#D4E157</color>
+
+    <color name="talk_red">#FF7043</color>
+    <color name="talk_warning">#FFB909</color>
+    <color name="talk_black">#383838</color>
+
+    <!-- talk old -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_10">#19000000</color>
+    <color name="black_20">#32000000</color>
+    <color name="material_light_blue_100">#B3E5FC</color>
+    <color name="material_light_blue_500">#03A9F4</color>
+    <color name="material_deep_orange_500">#FF5722</color>
+    <color name="material_grey_50">#FAFAFA</color>
+    <color name="material_grey_300">#E0E0E0</color>
+    <color name="material_grey_400">#BDBDBD</color>
+    <color name="material_grey_500">#9E9E9E</color>
+    <color name="material_grey_600">#757575</color>
+    <color name="material_grey_700">#616161</color>
+    <color name="material_grey_900">#212121</color>
+
+    <color name="color_ripple">#999999</color>
+    <color name="color_pressed">#25999999</color>
+    <color name="color_pressed_real">#E5E5E5</color>
+    <color name="color_pressed_dark">#15CCCCCC</color>
+    <color name="color_pressed_normal">#10000000</color>
+    <color name="color_mask">#87000000</color>
+    <color name="color_light_mask">#95FFFFFF</color>
+    <color name="color_grey">#6F6F6F</color>
+    <color name="color_call_mask">#DD000000</color>
+    <color name="color_image_mask">#7A000000</color>
+
+    <color name="search_layover_bg">#50000000</color>
+    <color name="black_25">#3F000000</color>
+    <color name="black_12">#1E000000</color>
+    <color name="black_38">#60000000</color>
+</resources>

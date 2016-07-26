@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <RelativeLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/input_email"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/material_grey_900"
+            android:textColorHint="@color/material_grey_500"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/email_address"
+            android:focusable="false"
+            android:background="@color/talk_blue" />
+    </RelativeLayout>
+
+    <com.teambition.talk.ui.widget.CodeInputView xmlns:code="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/code_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:visibility="gone"
+        android:maxLength="4"
+        code:codeSize="4"
+        code:lineColor="@color/talk_blue"
+        code:lineHeight="2dp"
+        code:lineInterval="8dp"
+        code:marginBottom="8dp"
+        code:textColor="@color/material_grey_900"
+        code:textSize="16sp" />
+</FrameLayout>
