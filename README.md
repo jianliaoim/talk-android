@@ -3,7 +3,9 @@
 ## 开发环境
 - Android Studio 2.1
 - Android Ndk r10e
+
 ## 配置
+- 需要自己搭建运行环境,[task-os服务端](https://github.com/jianliaoim/talk-os)
 - app/build.gradle配置
 如果需要release运行,首先需要在```signingConfigs```中配置您的keystore文件,在```gradle.properties```中配置```RELEASE_STORE_PASSWORD=```您的keystore的storePassword,```RELEASE_KEY_ALIAS=```您的keystore的KeyAlias, ```RELEASE_KEY_PASSWORD=```您的keystore的keyPassword,然后如果需要你还需要在buildTypes里配置```umeng_app_key```,```baidu_api_key```
 - Constant.java配置
