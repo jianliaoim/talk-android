@@ -7,6 +7,7 @@
 - app/build.gradle配置
 如果需要release运行,首先需要在```signingConfigs```中配置您的keystore文件,在```gradle.properties```中配置```RELEASE_STORE_PASSWORD=```您的keystore的storePassword,```RELEASE_KEY_ALIAS=```您的keystore的KeyAlias,
 ```RELEASE_KEY_PASSWORD=```您的keystore的keyPassword,然后如果需要你还需要在buildTypes里配置```umeng_app_key```,```baidu_api_key```
+
 - Constant.java配置
 ```XIAOMI_APP_ID```小米推送需要的APP_ID,```5921729345057```小米推送需要的APP_KEY, ```WECHAT_APP_ID``` 微信的APP_ID, ```WECHAT_APP_SECRET```微信的SECRET,```MIXPANEL_TOKEN``` Mixpanel需要的token,```BUGLY_APP_ID```腾讯bugly需要使用的APP_ID
 
